@@ -4,20 +4,23 @@ services:
   db:
     image: mysql:8.0.23
     ports:
-      - 4306:3306
+      - 3308:3306
     volumes:
       - mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
   backend:
     build: 
       context: ./backend/
       dockerfile: Dockerfile
     command: /bin/bash -c "
         rm -rf tmp/pids/server.pid &&
-        bundle exec rails db:migrates &&
-        bundle exec rails s -u webrick -p 3000 -b '0.0.0.0'"
-    # volumes:
-    #   - ./api:/myapp
-    #   - ./api/vendor/bundle:/myapp/vendor/bundle
+        bundle exec rails db:migrate &&
+        bundle exec rails s -p 3000 -b '0.0.0.0'"
+    volumes:
+      - type: bind
+        source: ./backend
+        target: /backend
     environment:
       TZ: Asia/Tokyo
       RAILS_ENV: development
@@ -30,10 +33,12 @@ services:
       context: ./frontend/
       dockerfile: Dockerfile
     volumes:
-      - ./frontend:/usr/src/app
-    command: sh -c "cd react-sample && yarn start"
+      - type: bind
+        source: ./frontend
+        target: /frontend
+    command: sh -c "yarn start"
     ports:
       - "8000:3000"
 volumes:
-  postgres-data:
+  mysql-data:
     driver: local
