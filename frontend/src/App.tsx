@@ -27,8 +27,6 @@ const App: React.FC = () => {
   const [isSignedIn, setIsSignedIn] = useState<boolean>(false)
   const [currentUser, setCurrentUser] = useState<User | undefined>()
 
-  // 認証済みのユーザーがいるかどうかチェック
-  // 確認できた場合はそのユーザーの情報を取得
   const handleGetCurrentUser = async () => {
     try {
       const res = await getCurrentUser()
@@ -52,9 +50,6 @@ const App: React.FC = () => {
     handleGetCurrentUser()
   }, [setCurrentUser])
 
-
-  // ユーザーが認証済みかどうかでルーティングを決定
-  // 未認証だった場合は「/signin」ページに促す
   const Private = ({ children }: { children: React.ReactElement }) => {
     if (!loading) {
       if (isSignedIn) {
@@ -74,14 +69,15 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
-            <Route
+            <Route path="/" element={<Home />} />
+            {/* <Route
               element={
                 <Private>
                   <Route path="/" element={<Home />} />
                 </Private>
               }
             >
-            </Route>
+            </Route> */}
           </Routes>
         </CommonLayout>
       </AuthContext.Provider>

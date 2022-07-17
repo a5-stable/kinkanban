@@ -12,6 +12,7 @@ Rails.application.routes.draw do
         resources :sessions, only: %i[ index ]
       end
 
+      resources :projects, only: %i[ create destroy update ]
       resources :sections, only: %i[ create destroy update ]
     end 
   end
