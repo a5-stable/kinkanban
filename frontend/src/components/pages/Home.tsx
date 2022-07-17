@@ -1,22 +1,32 @@
-import React, { useContext } from "react"
+import React, { useContext, useState, useEffect } from "react"
 
 import { AuthContext } from "../../../src/App"
 import client from "../../lib/api/client"
+import { Project } from "../../interfaces"
 
 // とりあえず認証済みユーザーの名前やメールアドレスを表示
 const Home: React.FC = () => {
   const { isSignedIn, currentUser } = useContext(AuthContext)
+  const [ projects, setProjects ] = useState<Project[]>([])
 
-  const Kanban = () => {
-    client.post("sections", params)
+  const handleAddProject = () => {
+    client.post("projects", { project: {title: "あああeeeあwあ"} }).then((res) => {
+      console.warn(res.data);
+      const newProjects = [res.data, ...projects]
+      setProjects(newProjects);
+    })
+  }
 
-    return (
-      <>
-        <div>看板</div>
-      </>
-    )
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+      client.get("projects").then((res) => {
+        setProjects(res.data);
+      })
+    };
 
+    fetchData();
+  }, []);
+ 
   return (
     <>
       {
@@ -30,8 +40,16 @@ const Home: React.FC = () => {
           <h1>Not signed in</h1>
         )
       }
-
-      <Kanban></Kanban>
+      <button onClick={handleAddProject}>+ プロジェクト追加</button>
+      <ul>
+        {projects.map((project: any) => (
+          <>
+            <li key={project.id}>
+              {project.title}
+            </li>
+          </>
+        ))}
+      </ul>
     </>
   )
 }
