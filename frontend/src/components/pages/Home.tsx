@@ -4,18 +4,32 @@ import { AuthContext } from "../../../src/App"
 import client from "../../lib/api/client"
 import { Project } from "../../interfaces"
 
-// とりあえず認証済みユーザーの名前やメールアドレスを表示
 const Home: React.FC = () => {
   const { isSignedIn, currentUser } = useContext(AuthContext)
   const [ projects, setProjects ] = useState<Project[]>([])
+  const [ error, setError ] = useState<string>("")
+  const [ title, setTitle ] = useState<string>("")
 
   const handleAddProject = () => {
-    client.post("projects", { project: {title: "あああeeeあwあ"} }).then((res) => {
-      console.warn(res.data);
+    const params = {
+      title: title
+    }
+
+    client.post("projects", { project: params }).then((res) => {
       const newProjects = [res.data, ...projects]
       setProjects(newProjects);
     })
   }
+
+  const handleProjectTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setTitle(e.target.value);
+
+    if (title) {
+      setError("");
+    } else {
+      setError("入力してください");
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,7 +54,24 @@ const Home: React.FC = () => {
           <h1>Not signed in</h1>
         )
       }
-      <button onClick={handleAddProject}>+ プロジェクト追加</button>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleAddProject();
+        }}
+      >
+        <input
+          type="text"
+          onChange={(e) => handleProjectTitleChange(e)}
+        />
+        <input
+          type="submit"
+          value="追加"
+        />
+        <small>
+          {error}
+        </small>
+      </form>
       <ul>
         {projects.map((project: any) => (
           <>
