@@ -1,14 +1,19 @@
 class Api::V1::SectionsController < ApplicationController
   before_action :set_section, only: %i[ update destroy ]
 
+  def index
+    @sections = Section.all
+    render json: @sections, status: :ok
+  end
+
   # POST /api/v1/sections
   def create
     @section = Section.new(section_params)
 
-    if section.save
-      render json: section, status: :created, location: section
+    if @section.save
+      render json: @section, status: :created
     else
-      render json: section.errors, status: :unprocessable_entity
+      render json: @section.errors, status: :unprocessable_entity
     end
   end
 

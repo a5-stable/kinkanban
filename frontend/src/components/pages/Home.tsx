@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from "react"
+import { BrowserRouter, Route, NavLink } from "react-router-dom"
 
 import { AuthContext } from "../../../src/App"
 import client from "../../lib/api/client"
@@ -19,12 +20,14 @@ const Home: React.FC = () => {
       const newProjects = [res.data, ...projects]
       setProjects(newProjects);
     })
+
+    setTitle("");
   }
 
   const handleProjectTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTitle(e.target.value);
 
-    if (title) {
+    if (title != null) {
       setError("");
     } else {
       setError("入力してください");
@@ -62,6 +65,7 @@ const Home: React.FC = () => {
       >
         <input
           type="text"
+          value={title}
           onChange={(e) => handleProjectTitleChange(e)}
         />
         <input
@@ -76,7 +80,7 @@ const Home: React.FC = () => {
         {projects.map((project: any) => (
           <>
             <li key={project.id}>
-              {project.title}
+              <NavLink to={"/projects/" + project.id}>{project.title}</NavLink>
             </li>
           </>
         ))}

@@ -33,3 +33,10 @@ export interface Project {
   created_at: Date
   updated_at: Date
 }
+
+export interface Section {
+  id: number
+  title: string
+  created_at: Date
+  updated_at: Date
+}

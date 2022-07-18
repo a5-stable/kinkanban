@@ -1,9 +1,12 @@
 class Api::V1::ProjectsController < ApplicationController
-  before_action :set_project, only: %i[ update destroy ]
+  before_action :set_project, only: %i[ show update destroy ]
 
   def index
     @projects = Project.all
     render json: @projects, status: :ok
+  end
+
+  def show
   end
 
   # POST /projects

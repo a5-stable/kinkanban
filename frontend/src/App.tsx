@@ -5,6 +5,7 @@ import CommonLayout from "../src/components/layouts/CommonLayout"
 import Home from "../src/components/pages/Home"
 import SignUp from "../src/components/pages/SignUp"
 import SignIn from "../src/components/pages/SignIn"
+import Kanban from './components/sections/Kanban';
 
 import logo from './logo.svg';
 import './App.css';
@@ -70,6 +71,10 @@ const App: React.FC = () => {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/" element={<Home />} />
+            <Route
+              path="/projects/:id"
+              element={<Kanban />}
+            />
             {/* <Route
               element={
                 <Private>
