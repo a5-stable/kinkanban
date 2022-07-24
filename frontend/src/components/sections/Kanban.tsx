@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { AuthContext } from "../../../src/App"
 import client from "../../lib/api/client"
 import { Section } from "../../interfaces"
+import Lane from "./Lane"
 
 const Kanban: React.FC = () => {
   const { isSignedIn, currentUser } = useContext(AuthContext)
@@ -77,15 +78,16 @@ const Kanban: React.FC = () => {
           {error}
         </small>
       </form>
-      <ul>
-        {sections.map((section: Section) => (
-          <>
-            <li key={section.id}>
-              {section.title}
-            </li>
-          </>
-        ))}
-      </ul>
+      {sections.map((section: Section) => (
+        <>
+          <div style={{display: "flex"}}>
+            <Lane
+              section={section}
+            >
+            </Lane>
+          </div>
+        </>
+      ))}
     </>
   )
 }
