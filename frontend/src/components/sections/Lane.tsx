@@ -7,7 +7,9 @@ import { Section } from "../../interfaces"
 const Lane: any = ({ section }: { section: Section }) => {
   return(
     <>
-      <p>{section.title}</p>
+      <div className="card bg-light">
+        <p>{section.title}</p>
+      </div>
     </>
   )
 }

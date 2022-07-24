@@ -78,16 +78,14 @@ const Kanban: React.FC = () => {
           {error}
         </small>
       </form>
-      {sections.map((section: Section) => (
-        <>
-          <div style={{display: "flex"}}>
-            <Lane
-              section={section}
-            >
-            </Lane>
-          </div>
-        </>
-      ))}
+      <div className="d-flex justify-content-around h-100">
+        {sections.map((section: Section) => (
+          <Lane
+            section={section}
+          >
+          </Lane>
+        ))}
+      </div>
     </>
   )
 }

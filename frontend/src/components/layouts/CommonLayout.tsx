@@ -24,13 +24,13 @@ const CommonLayout = ({ children }: CommonLayoutProps) => {
       <header>
         <Header />
       </header>
-      <main>
-        <Container maxWidth="lg" className={classes.container}>
-          <Grid container justify="center">
-            <Grid item>
+      <main className="h-100">
+        <Container maxWidth="lg" className="h-100">
+          {/* <Grid container justify="center">
+            <Grid item> */}
               {children}
-            </Grid>   
-          </Grid>
+            {/* </Grid>
+          </Grid> */}
         </Container>
       </main>
     </>
