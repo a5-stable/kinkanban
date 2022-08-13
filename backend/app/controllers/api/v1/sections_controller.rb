@@ -19,16 +19,16 @@ class Api::V1::SectionsController < ApplicationController
 
   # PATCH/PUT /api/v1/sections/1
   def update
-    if section.update(section_params)
-      render json: section
+    if @section.update(section_params)
+      render json: @section
     else
-      render json: section.errors, status: :unprocessable_entity
+      render json: @section.errors, status: :unprocessable_entity
     end
   end
 
   # DELETE /api/v1/sections/1
   def destroy
-    section.destroy
+    @section.destroy
   end
 
   private
