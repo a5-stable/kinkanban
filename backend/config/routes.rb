@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :story_sections
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
 
       resources :projects, only: %i[ index show create destroy update ]
       resources :sections, only: %i[ index create destroy update ]
+      resources :stories,  only: %i[ create destroy update ]
     end 
   end
 end

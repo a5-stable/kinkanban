@@ -1,0 +1,2 @@
+class StorySection < ApplicationRecord
+end
