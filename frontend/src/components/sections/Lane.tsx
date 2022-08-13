@@ -19,35 +19,23 @@ import Grid from '@mui/material/Grid';
 const Lane: any = ({ section }: { section: Section }) => {
   const SectionCard = styled(Card) ({
     height: "100%",
+    width: "300px",
   })
 
   return(
     <>
-      <div>
-        <Grid item>
-          <SectionCard>
-            <CardContent>
-              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                Word of the Day
-              </Typography>
-              <Typography variant="h5" component="div">
-                {section.title}
-              </Typography>
-              <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                adjective
-              </Typography>
-              <Typography variant="body2">
-                well meaning and kindly.
-                <br />
-                {'"a benevolent smile"'}
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </SectionCard>
-        </Grid>
-      </div>
+      <Grid item>
+        <SectionCard>
+          <CardContent>
+            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+              {section.title}
+            </Typography>
+            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+              + タスクを追加
+            </Typography>
+          </CardContent>
+        </SectionCard>
+      </Grid>
     </>
   )
 }
