@@ -29,6 +29,15 @@ const Lane: any = ({ section }: { section: Section }) => {
     })
   }
 
+  const handleAddStory = (section_id: Number) => {
+    const params = {
+      section_id: section_id,
+      title: "test",
+    }
+
+    client.get(`stories/1`)
+  }
+
   return(
     <>
       <Grid item>
@@ -40,7 +49,12 @@ const Lane: any = ({ section }: { section: Section }) => {
               />
             </Typography>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              + タスクを追加
+              <Button
+                onClick={() => handleAddStory(section.id)}
+                color="secondary"
+              >
+                + Add Story
+              </Button>
             </Typography>
           </CardContent>
         </SectionCard>
