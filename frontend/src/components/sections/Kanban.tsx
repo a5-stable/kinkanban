@@ -7,6 +7,8 @@ import Lane from "./Lane"
 import Button from '@mui/material/Button';
 import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
+import Counter from './Counter'
+import Kanb from "./Lane";
 
 const Kanban: React.FC = () => {
   const { id } = useParams();

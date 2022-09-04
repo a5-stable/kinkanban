@@ -40,3 +40,8 @@ export interface Section {
   created_at: Date
   updated_at: Date
 }
+
+export interface Story {
+  id: number
+  title?: string
+}
