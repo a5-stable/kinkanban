@@ -45,9 +45,11 @@ const Lane: any = ({ sectionId, stories }) => {
       }
 
   type Item = { id: number; title?: string; isDragOver: boolean };
-  type State = { [key in any]: any };
+  type State = any;
 
-  const initialState: State = {};
+  const initialState: State = {
+    [sectionId]: []
+  };
 
   function reducer(state: State, action: Action): State {
     switch (action.type) {
