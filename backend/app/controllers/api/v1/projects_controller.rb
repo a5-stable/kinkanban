@@ -1,5 +1,5 @@
 class Api::V1::ProjectsController < ApplicationController
-  before_action :set_project, only: %i[ show update destroy ]
+  before_action :set_project, only: %i[ show update destroy search ]
 
   def index
     @projects = Project.all
@@ -7,6 +7,13 @@ class Api::V1::ProjectsController < ApplicationController
   end
 
   def show
+  end
+
+  def search
+    @response = Section.where(project_id: @project.id).map {|section|
+      [section.id, Story.where(section_id: section.id)]
+    }.to_h
+    render status: 200, json: { body: @response }
   end
 
   # POST /projects

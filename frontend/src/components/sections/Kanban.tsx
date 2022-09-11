@@ -14,6 +14,7 @@ const Kanban: React.FC = () => {
   const { id } = useParams();
   const [ sections, setSections ] = useState<Section[]>([])
   const [ title, setTitle ] = useState<string>("")
+  const [ data, setData ] = useState<any>({})
 
   const handleAddSection = () => {
     const params = {
@@ -28,13 +29,9 @@ const Kanban: React.FC = () => {
   }
 
   useEffect(() => {
-    const fetchData = async () => {
-      client.get("sections").then((res) => {
-        setSections(res.data);
-      })
-    };
-
-    fetchData();
+    client.get(`projects/${id}/search`).then((res) => {
+      setData(res.data.body)
+    });
   }, []);
 
   useEffect(() => {
@@ -50,8 +47,11 @@ const Kanban: React.FC = () => {
   return (
     <>
       <KanbanContainer>
-        {sections.map((section: Section) => (
-          <Lane section={section}/>
+        {Object.keys(data).map((key) => (
+          <Lane
+            sectionId={key}
+            stories={data[key]}
+          />
         ))}
         <div style={{width: "300px"}}>
           <Button 

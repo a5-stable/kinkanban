@@ -12,7 +12,12 @@ Rails.application.routes.draw do
         resources :sessions, only: %i[ index ]
       end
 
-      resources :projects, only: %i[ index show create destroy update ]
+      resources :projects, only: %i[ index show create destroy update ] do
+        member do
+          get "search"
+        end
+      end
+      
       resources :sections, only: %i[ index create destroy update ]
       resources :stories,  only: %i[ create destroy update ]
     end 

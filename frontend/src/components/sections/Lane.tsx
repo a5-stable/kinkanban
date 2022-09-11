@@ -10,21 +10,11 @@ import { Section, Story } from "../../interfaces";
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
 
-const Lane: any = ({ section }: { section: Section }) => {
+const Lane: any = ({ sectionId, stories }) => {
   const SectionCard = styled(Card) ({
     height: "100%",
     width: "300px",
   });
-
-  const handleAddStory = (section_id: Number) => {
-    const params = {
-      section_id: section_id,
-    }
-
-    client.post(`stories`, { story: params }).then((res) => {
-      console.log(res);
-    });
-  }
 
   type Action =
     | { 
@@ -48,19 +38,16 @@ const Lane: any = ({ section }: { section: Section }) => {
         type: "DELETE";
         id: number;
         sectionId: number;
-      };
+      }
+    | {
+        type: "INITIALIZE";
+        payload: any;
+      }
 
   type Item = { id: number; title?: string; isDragOver: boolean };
   type State = { [key in any]: any };
 
-  const initialState: State = {
-    1: [{ id: 1, title: "Task 4", isDragOver: false }],
-    2: [{ id: 2, title: "Task 3", isDragOver: false }],
-    3: [
-      { id: 3, title: "Task 2", isDragOver: false },
-      { id: 4, title: "Task 1", isDragOver: false },
-    ],
-  };
+  const initialState: State = {};
 
   function reducer(state: State, action: Action): State {
     switch (action.type) {
@@ -213,186 +200,28 @@ const Lane: any = ({ section }: { section: Section }) => {
     <>
       <Grid
         onDragOver={(e) => e.preventDefault()}
-        onDrop={(e) => onItemsDrop(e, section.id)}
+        onDrop={(e) => onItemsDrop(e, sectionId)}
       >
         <SectionCard>
           <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
               <Input
-                defaultValue={section.title ? section.title : "No title"}
+                defaultValue="No title"
               />
             </Typography>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
               <Button
-                onClick={() => dispatch({ type: "CREATE", sectionId: section.id })}
+                onClick={() => dispatch({ type: "CREATE", sectionId: sectionId})}
                 color="secondary"
               >
                 + Add Story
               </Button>
-              {Items(state[section.id], section.id)}
+              {Items(stories, sectionId)}
             </Typography>
           </CardContent>
         </SectionCard>
       </Grid>
     </>
   )
-    // return (
-    //   <div className="container">
-    //     <section className="content">
-    //       <div>
-    //         <div className="todo">
-    //           <h1>Todo</h1>
-    //           <button onClick={() => setAdd(true)}>
-    //             追加
-    //           </button>
-    //         </div>
-    //         {add && (
-    //           <div className="addItem">
-    //             <input
-    //               type="text"
-    //               onKeyUp={(e) => {
-    //                 if (e.code === "Enter") {
-    //                   e.preventDefault();
-    //                   e.stopPropagation();
-    //                   dispatch({ type: "CREATE", content: addInput });
-    //                   setAddInput("");
-    //                   setAdd(false);
-    //                 }
-    //               }}
-    //               onChange={onAddInputChange}
-    //               value={addInput}
-    //             />
-    //             <div>
-    //               <button
-    //                 onClick={() => {
-    //                   dispatch({ type: "CREATE", content: addInput });
-    //                   setAddInput("");
-    //                   setAdd(false);
-    //                 }}
-    //               >
-    //                 Add
-    //               </button>
-    //               <button onClick={() => setAdd(false)}>Cancel</button>
-    //             </div>
-    //           </div>
-    //         )}
-    //         <div
-    //           className="items"
-    //           onDragOver={(e) => e.preventDefault()}
-    //           onDrop={(e) => onItemsDrop(e, "todo")}
-    //         >
-    //           {Items(state.todo, "todo")}
-    //         </div>
-    //       </div>
-    //       <div>
-    //         <h1>Doing</h1>
-    //         <div
-    //           className="items"
-    //           onDragOver={(e) => e.preventDefault()}
-    //           onDrop={(e) => onItemsDrop(e, "doing")}
-    //         >
-    //           {Items(state.doing, "doing")}
-    //         </div>
-    //       </div>
-    //       <div>
-    //         <h1>Done</h1>
-    //         <div
-    //           className="items"
-    //           onDragOver={(e) => e.preventDefault()}
-    //           onDrop={(e) => onItemsDrop(e, "done")}
-    //         >
-    //           {Items(state.done, "done")}
-    //         </div>
-    //       </div>
-    //     </section>
-    //   </div>
-    // );
-};
-// import Card from '@mui/material/Card';
-// import CardContent from '@mui/material/CardContent';
-// import Button from '@mui/material/Button';
-// import Typography from '@mui/material/Typography';
-// import { Section, Story } from "../../interfaces";
-
-// import Grid from '@mui/material/Grid';
-// import Input from '@mui/material/Input';
-
-// type State = {};
-// type storyAction =
-//   | { type: "CREATE"; content: string }
-//   | {
-//       type: "UPDATE_CATEGORY";
-//       id: number;
-//       position: number;
-//       newSectionId: number;
-//     };
-
-// const [state, dispatch] = useReducer(reducer, initialState);
-// const [add, setAdd] = useState(false);
-// const [addInput, setAddInput] = useState("");
-
-// const reducer = (state: any, action: any) => {
-//   switch(action) {
-//     case "CREATE": {
-//       return {
-//         ...state,
-//         todo: [
-//           { id: Date.now(), content: action.content, isDragOver: false },
-//           ...state.todo
-//         ]
-//       };
-//     }
-//   }
-// };
-
-// const Lane: any = ({ section }: { section: Section }) => {
-//   const SectionCard = styled(Card) ({
-//     height: "100%",
-//     width: "300px",
-//   })
-
-//   const submitTitleUpdate = (id: Number) => {
-//     const params = {
-//       title: "test",
-//     }
-
-//     client.patch(`sections/${id}`, { section: params }).then((res) => {
-//     })
-//   }
-
-//   const handleAddStory = (section_id: Number) => {
-//     const params = {
-//       section_id: section_id,
-//     }
-
-//     client.post(`stories`, { story: params }).then((res) => {
-//       console.log(res);
-//     });
-//   }
-  
-//   return(
-//     <>
-//       <Grid item>
-//         <SectionCard>
-//           <CardContent>
-//             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-//               <Input
-//                 defaultValue={section.title ? section.title : "No title"}
-//               />
-//             </Typography>
-//             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-//               <Button
-//                 onClick={() => handleAddStory(section.id)}
-//                 color="secondary"
-//               >
-//                 + Add Story
-//               </Button>
-//             </Typography>
-//           </CardContent>
-//         </SectionCard>
-//       </Grid>
-//     </>
-//   )
-// }
-
+}
 export default Lane

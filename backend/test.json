@@ -1,0 +1,2784 @@
+{
+  "id": "595654576cca9762f38c9eae",
+  "actions": [
+      {
+          "id": "631d6b00a8d806036fc4ecd2",
+          "data": {
+              "card": {
+                  "id": "631d6affa8d806036fc4ecc8",
+                  "name": "dwedw",
+                  "idShort": 14,
+                  "shortLink": "vf5Yi5TI"
+              },
+              "list": {
+                  "id": "62088e2413816345f65cf5e6",
+                  "name": "Done"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-09-11T04:58:40.007Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createCard"
+      },
+      {
+          "id": "631d6afe0edb5b01ebfffb6e",
+          "data": {
+              "card": {
+                  "id": "631d6afe0edb5b01ebfffb59",
+                  "name": "ddddew",
+                  "idShort": 13,
+                  "shortLink": "QmqLsHWJ"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-09-11T04:58:38.353Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createCard"
+      },
+      {
+          "id": "631d6afcb85dbd02ec3e4f7b",
+          "data": {
+              "card": {
+                  "id": "631d6afcb85dbd02ec3e4f71",
+                  "name": "ddd",
+                  "idShort": 12,
+                  "shortLink": "fQ13UhJ1"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-09-11T04:58:36.648Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createCard"
+      },
+      {
+          "id": "6208c0b70d4a047127d5beba",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eaf",
+                  "id": "6208bccc0350ef6f679ede55",
+                  "name": "ファミリーマートのウマ娘パフェを買う https://animeanime.jp/article/2022/02/10/67457.html",
+                  "idShort": 10,
+                  "shortLink": "DiK1d92g"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eb0"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "Will Do"
+              }
+          },
+          "date": "2022-02-13T08:26:31.544Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard"
+      },
+      {
+          "id": "6208c0b6aea0fb0d071b5762",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "6208bccc0350ef6f679ede55",
+                  "name": "ファミリーマートのウマ娘パフェを買う https://animeanime.jp/article/2022/02/10/67457.html",
+                  "idShort": 10,
+                  "shortLink": "DiK1d92g"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "Will Do"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T08:26:30.001Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard"
+      },
+      {
+          "id": "6208bcceec532979175e7037",
+          "data": {
+              "card": {
+                  "id": "6208bcceec532979175e702e",
+                  "name": "dqdq",
+                  "idShort": 11,
+                  "shortLink": "UXkQgyCi"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "Will"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-13T08:09:50.737Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createCard"
+      },
+      {
+          "id": "6208bccc0350ef6f679ede5e",
+          "data": {
+              "card": {
+                  "id": "6208bccc0350ef6f679ede55",
+                  "name": "wedqd",
+                  "idShort": 10,
+                  "shortLink": "DiK1d92g"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "Will"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-13T08:09:48.340Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createCard"
+      },
+      {
+          "id": "6208bcc87f76bd81289ee175",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eaf",
+                  "id": "62088f12198bbf32df2bde99",
+                  "name": "インポスター症候群について検索",
+                  "idShort": 9,
+                  "shortLink": "yHzbzkvD"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eb0"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "Will"
+              }
+          },
+          "date": "2022-02-13T08:09:44.425Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard"
+      },
+      {
+          "id": "6208bcc740dfc14f4299b98f",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "62088f12198bbf32df2bde99",
+                  "name": "インポスター症候群について検索",
+                  "idShort": 9,
+                  "shortLink": "yHzbzkvD"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "Will"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T08:09:43.329Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard"
+      },
+      {
+          "id": "62089020ff047330c306cb49",
+          "data": {
+              "board": {
+                  "prefs": {
+                      "permissionLevel": "private"
+                  },
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "old": {
+                  "prefs": {
+                      "permissionLevel": "public"
+                  }
+              }
+          },
+          "date": "2022-02-13T04:59:12.009Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateBoard",
+          "display": {
+              "translationKey": "action_board_perm_level",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "GymUgtwp"
+                  },
+                  "level": {
+                      "type": "translatable",
+                      "translationKey": "action_members_visibility"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6208900cfb504874eacafd18",
+          "data": {
+              "board": {
+                  "prefs": {
+                      "permissionLevel": "public"
+                  },
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "old": {
+                  "prefs": {
+                      "permissionLevel": "private"
+                  }
+              }
+          },
+          "date": "2022-02-13T04:58:52.903Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateBoard",
+          "display": {
+              "translationKey": "action_board_perm_level",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "GymUgtwp"
+                  },
+                  "level": {
+                      "type": "translatable",
+                      "translationKey": "action_public_visibility"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088f12198bbf32df2bdea2",
+          "data": {
+              "card": {
+                  "id": "62088f12198bbf32df2bde99",
+                  "name": "インポスター症候群について検索",
+                  "idShort": 9,
+                  "shortLink": "yHzbzkvD"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "Will"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-13T04:54:42.753Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createCard",
+          "display": {
+              "translationKey": "action_create_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "id": "62088f12198bbf32df2bde99",
+                      "shortLink": "yHzbzkvD",
+                      "text": "インポスター症候群について検索"
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "Will"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e3dd1d4804fdc173910",
+          "data": {
+              "card": {
+                  "closed": true,
+                  "id": "595654576cca9762f38c9ec9",
+                  "name": "カードとリストは、必要なだけ追加できます。",
+                  "idShort": 3,
+                  "shortLink": "1yqrBym5"
+              },
+              "old": {
+                  "closed": false
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T04:51:09.852Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_archived_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "closed": true,
+                      "id": "595654576cca9762f38c9ec9",
+                      "shortLink": "1yqrBym5",
+                      "text": "カードとリストは、必要なだけ追加できます。"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e3c5ec58168b821d421",
+          "data": {
+              "card": {
+                  "closed": true,
+                  "id": "595654576cca9762f38c9eb3",
+                  "name": "これはカードです。「やったこと」リストにドラックして作業が終わったということを明示しましょう。",
+                  "idShort": 1,
+                  "shortLink": "vXifX2Ka"
+              },
+              "old": {
+                  "closed": false
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T04:51:08.304Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_archived_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "closed": true,
+                      "id": "595654576cca9762f38c9eb3",
+                      "shortLink": "vXifX2Ka",
+                      "text": "これはカードです。「やったこと」リストにドラックして作業が終わったということを明示しましょう。"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e3a88c9bb3442e75ef9",
+          "data": {
+              "card": {
+                  "closed": true,
+                  "id": "6207dd2df24f9a7034c8ea3f",
+                  "name": "I have to go ",
+                  "idShort": 8,
+                  "shortLink": "kHEcTjkK"
+              },
+              "old": {
+                  "closed": false
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T04:51:06.682Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_archived_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "closed": true,
+                      "id": "6207dd2df24f9a7034c8ea3f",
+                      "shortLink": "kHEcTjkK",
+                      "text": "I have to go "
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e398481ca3383a6cc23",
+          "data": {
+              "card": {
+                  "closed": true,
+                  "id": "595654576cca9762f38c9ed3",
+                  "name": "Trelloをより深く理解し、活用するヒントをご紹介します。",
+                  "idShort": 7,
+                  "shortLink": "EZQqc9If"
+              },
+              "old": {
+                  "closed": false
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T04:51:05.139Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_archived_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "closed": true,
+                      "id": "595654576cca9762f38c9ed3",
+                      "shortLink": "EZQqc9If",
+                      "text": "Trelloをより深く理解し、活用するヒントをご紹介します。"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e368f1ee121aab7cc65",
+          "data": {
+              "card": {
+                  "closed": true,
+                  "id": "595654576cca9762f38c9ed2",
+                  "name": "ページ上部の + ボタンから、新しいボードを作ることができます。",
+                  "idShort": 6,
+                  "shortLink": "dG3DKb3W"
+              },
+              "old": {
+                  "closed": false
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T04:51:02.139Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_archived_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "closed": true,
+                      "id": "595654576cca9762f38c9ed2",
+                      "shortLink": "dG3DKb3W",
+                      "text": "ページ上部の + ボタンから、新しいボードを作ることができます。"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e34fb738035ad8ead5a",
+          "data": {
+              "card": {
+                  "closed": true,
+                  "id": "595654576cca9762f38c9ece",
+                  "name": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。",
+                  "idShort": 4,
+                  "shortLink": "PKxLttDY"
+              },
+              "old": {
+                  "closed": false
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              }
+          },
+          "date": "2022-02-13T04:51:00.416Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_archived_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "closed": true,
+                      "id": "595654576cca9762f38c9ece",
+                      "shortLink": "PKxLttDY",
+                      "text": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e30339002228d1574d1",
+          "data": {
+              "card": {
+                  "id": "595654576cca9762f38c9ed1",
+                  "idShort": 5,
+                  "shortLink": "SgAXNWnF"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "WIP"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-13T04:50:56.913Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "deleteCard",
+          "display": {
+              "translationKey": "action_delete_card",
+              "entities": {
+                  "idCard": {
+                      "type": "text",
+                      "text": 5
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "WIP"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e2901f5b9462f0621d1",
+          "data": {
+              "list": {
+                  "id": "62088e2901f5b9462f0621cb",
+                  "name": "Frozen"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-13T04:50:49.413Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createList",
+          "display": {
+              "translationKey": "action_added_list_to_board",
+              "entities": {
+                  "list": {
+                      "type": "list",
+                      "id": "62088e2901f5b9462f0621cb",
+                      "text": "Frozen"
+                  },
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "GymUgtwp"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e2413816345f65cf5ec",
+          "data": {
+              "list": {
+                  "id": "62088e2413816345f65cf5e6",
+                  "name": "Done"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-13T04:50:44.030Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createList",
+          "display": {
+              "translationKey": "action_added_list_to_board",
+              "entities": {
+                  "list": {
+                      "type": "list",
+                      "id": "62088e2413816345f65cf5e6",
+                      "text": "Done"
+                  },
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "GymUgtwp"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088e024f9db70817713bb6",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "595654576cca9762f38c9ece",
+                  "name": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。",
+                  "idShort": 4,
+                  "shortLink": "PKxLttDY"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              }
+          },
+          "date": "2022-02-13T04:50:10.504Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eb0",
+                      "id": "595654576cca9762f38c9ece",
+                      "shortLink": "PKxLttDY",
+                      "text": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "62088dfc7fcd117932aa6fa8",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eaf",
+                  "id": "595654576cca9762f38c9ece",
+                  "name": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。",
+                  "idShort": 4,
+                  "shortLink": "PKxLttDY"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eb0"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              }
+          },
+          "date": "2022-02-13T04:50:04.619Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eaf",
+                      "id": "595654576cca9762f38c9ece",
+                      "shortLink": "PKxLttDY",
+                      "text": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dd40613a7b1b8ef1563d",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "595654576cca9762f38c9ed2",
+                  "name": "ページ上部の + ボタンから、新しいボードを作ることができます。",
+                  "idShort": 6,
+                  "shortLink": "dG3DKb3W"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              }
+          },
+          "date": "2022-02-12T16:16:00.955Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eb0",
+                      "id": "595654576cca9762f38c9ed2",
+                      "shortLink": "dG3DKb3W",
+                      "text": "ページ上部の + ボタンから、新しいボードを作ることができます。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dd3015e798048f51c040",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "595654576cca9762f38c9ed3",
+                  "name": "Trelloをより深く理解し、活用するヒントをご紹介します。",
+                  "idShort": 7,
+                  "shortLink": "EZQqc9If"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              }
+          },
+          "date": "2022-02-12T16:15:44.036Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eb0",
+                      "id": "595654576cca9762f38c9ed3",
+                      "shortLink": "EZQqc9If",
+                      "text": "Trelloをより深く理解し、活用するヒントをご紹介します。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dd2eed851442d5d5a428",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eaf",
+                  "id": "595654576cca9762f38c9ed2",
+                  "name": "ページ上部の + ボタンから、新しいボードを作ることができます。",
+                  "idShort": 6,
+                  "shortLink": "dG3DKb3W"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eb0"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              }
+          },
+          "date": "2022-02-12T16:15:42.636Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eaf",
+                      "id": "595654576cca9762f38c9ed2",
+                      "shortLink": "dG3DKb3W",
+                      "text": "ページ上部の + ボタンから、新しいボードを作ることができます。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dd2df24f9a7034c8ea48",
+          "data": {
+              "card": {
+                  "id": "6207dd2df24f9a7034c8ea3f",
+                  "name": "I have to go ",
+                  "idShort": 8,
+                  "shortLink": "kHEcTjkK"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-12T16:15:41.326Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "createCard",
+          "display": {
+              "translationKey": "action_create_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "id": "6207dd2df24f9a7034c8ea3f",
+                      "shortLink": "kHEcTjkK",
+                      "text": "I have to go "
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dcfe22a06f33909ef837",
+          "data": {
+              "card": {
+                  "id": "595654576cca9762f38c9eb5",
+                  "idShort": 2,
+                  "shortLink": "ztpYpyyb"
+              },
+              "list": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              }
+          },
+          "date": "2022-02-12T16:14:54.539Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "deleteCard",
+          "display": {
+              "translationKey": "action_delete_card",
+              "entities": {
+                  "idCard": {
+                      "type": "text",
+                      "text": 2
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dcc82bc06c6b63ef7bf7",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "595654576cca9762f38c9ece",
+                  "name": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。",
+                  "idShort": 4,
+                  "shortLink": "PKxLttDY"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              }
+          },
+          "date": "2022-02-12T16:14:00.665Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eb0",
+                      "id": "595654576cca9762f38c9ece",
+                      "shortLink": "PKxLttDY",
+                      "text": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dcc632fe5427fc507dc6",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "595654576cca9762f38c9ec9",
+                  "name": "カードとリストは、必要なだけ追加できます。",
+                  "idShort": 3,
+                  "shortLink": "1yqrBym5"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              }
+          },
+          "date": "2022-02-12T16:13:58.240Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eb0",
+                      "id": "595654576cca9762f38c9ec9",
+                      "shortLink": "1yqrBym5",
+                      "text": "カードとリストは、必要なだけ追加できます。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dcb70088f41af877f693",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "595654576cca9762f38c9ed2",
+                  "name": "ページ上部の + ボタンから、新しいボードを作ることができます。",
+                  "idShort": 6,
+                  "shortLink": "dG3DKb3W"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              }
+          },
+          "date": "2022-02-12T16:13:43.815Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eb0",
+                      "id": "595654576cca9762f38c9ed2",
+                      "shortLink": "dG3DKb3W",
+                      "text": "ページ上部の + ボタンから、新しいボードを作ることができます。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "6207dcb34f9db708173ec44a",
+          "data": {
+              "card": {
+                  "idList": "595654576cca9762f38c9eb0",
+                  "id": "595654576cca9762f38c9eb3",
+                  "name": "これはカードです。「やったこと」リストにドラックして作業が終わったということを明示しましょう。",
+                  "idShort": 1,
+                  "shortLink": "vXifX2Ka"
+              },
+              "old": {
+                  "idList": "595654576cca9762f38c9eaf"
+              },
+              "board": {
+                  "id": "595654576cca9762f38c9eae",
+                  "name": "ウェルカムボード",
+                  "shortLink": "GymUgtwp"
+              },
+              "listBefore": {
+                  "id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）"
+              },
+              "listAfter": {
+                  "id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)"
+              }
+          },
+          "date": "2022-02-12T16:13:39.716Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "updateCard",
+          "display": {
+              "translationKey": "action_move_card_from_list_to_list",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "idList": "595654576cca9762f38c9eb0",
+                      "id": "595654576cca9762f38c9eb3",
+                      "shortLink": "vXifX2Ka",
+                      "text": "これはカードです。「やったこと」リストにドラックして作業が終わったということを明示しましょう。"
+                  },
+                  "listBefore": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "listAfter": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "60c927d3a184ce31ad2b5821",
+          "data": {
+              "reason": "teamify-auto",
+              "board": {
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "organization": {
+                  "id": "60c927d3a184ce31ad2b581a",
+                  "name": "Trelloワークスペース"
+              }
+          },
+          "date": "2021-06-15T22:21:07.655Z",
+          "idMemberCreator": "595654576cca9762f38c9ea8",
+          "type": "addToOrganizationBoard",
+          "display": {
+              "translationKey": "action_add_to_organization_board",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "GymUgtwp"
+                  },
+                  "organization": {
+                      "type": "organization",
+                      "id": "60c927d3a184ce31ad2b581a",
+                      "text": "Trelloワークスペース"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "595654576cca9762f38c9ea8",
+                      "username": "a5_stable",
+                      "text": "A5"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "595654576cca9762f38c9ea8",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+              "bio": "",
+              "bioData": {
+                  "emoji": {}
+              },
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/a5_stable",
+              "fullName": "A5",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "A5",
+              "nonPublic": {
+                  "fullName": "A5",
+                  "initials": "A5",
+                  "avatarUrl": "https://trello-members.s3.amazonaws.com/595654576cca9762f38c9ea8/5e33dc1399fede65cc8af24db53a0299",
+                  "avatarHash": "5e33dc1399fede65cc8af24db53a0299"
+              },
+              "nonPublicAvailable": true,
+              "username": "a5_stable"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ef2",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae",
+                  "prefs": {
+                      "background": "lime"
+                  }
+              },
+              "old": {
+                  "prefs": {
+                      "background": "blue"
+                  }
+              }
+          },
+          "date": "2017-04-21T20:14:25.497Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "updateBoard",
+          "display": {
+              "translationKey": "action_changed_board_background",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "HF8XAoZd"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ee6",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae",
+                  "prefs": {
+                      "selfJoin": false
+                  }
+              },
+              "old": {
+                  "prefs": {
+                      "selfJoin": true
+                  }
+              }
+          },
+          "date": "2015-01-16T19:45:02.797Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "updateBoard",
+          "display": {
+              "translationKey": "action_disabled_self_join",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "HF8XAoZd"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ee5",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae",
+                  "prefs": {
+                      "selfJoin": true
+                  }
+              },
+              "old": {
+                  "prefs": {
+                      "selfJoin": false
+                  }
+              }
+          },
+          "date": "2015-01-16T19:44:12.723Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "updateBoard",
+          "display": {
+              "translationKey": "action_enabled_self_join",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "HF8XAoZd"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ee2",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae",
+                  "prefs": {
+                      "permissionLevel": "public"
+                  }
+              },
+              "old": {
+                  "prefs": {
+                      "permissionLevel": "private"
+                  }
+              }
+          },
+          "date": "2015-01-16T19:43:53.025Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "updateBoard",
+          "display": {
+              "translationKey": "action_board_perm_level",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "HF8XAoZd"
+                  },
+                  "level": {
+                      "type": "translatable",
+                      "translationKey": "action_public_visibility"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ee0",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "list": {
+                  "_id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）",
+                  "id": "595654576cca9762f38c9eaf"
+              },
+              "card": {
+                  "_id": "595654576cca9762f38c9ed3",
+                  "shortLink": "AgCyecMP",
+                  "idShort": 7,
+                  "name": "Trelloをより深く理解し、活用するヒントをご紹介します。カードを開いてご覧ください。",
+                  "id": "595654576cca9762f38c9ed3"
+              }
+          },
+          "date": "2015-01-09T18:44:51.576Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createCard",
+          "display": {
+              "translationKey": "action_create_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "shortLink": "AgCyecMP",
+                      "id": "595654576cca9762f38c9ed3",
+                      "text": "Trelloをより深く理解し、活用するヒントをご紹介します。カードを開いてご覧ください。"
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9edf",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "list": {
+                  "_id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）",
+                  "id": "595654576cca9762f38c9eaf"
+              },
+              "card": {
+                  "_id": "595654576cca9762f38c9ed2",
+                  "shortLink": "ZQK0l0oa",
+                  "idShort": 6,
+                  "name": "ページ上部の + ボタンから、新しいボードを作ることができます。",
+                  "id": "595654576cca9762f38c9ed2"
+              }
+          },
+          "date": "2015-01-09T18:44:30.200Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createCard",
+          "display": {
+              "translationKey": "action_create_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "shortLink": "ZQK0l0oa",
+                      "id": "595654576cca9762f38c9ed2",
+                      "text": "ページ上部の + ボタンから、新しいボードを作ることができます。"
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9edd",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "list": {
+                  "_id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）",
+                  "id": "595654576cca9762f38c9eaf"
+              },
+              "card": {
+                  "_id": "595654576cca9762f38c9ece",
+                  "shortLink": "UlhkFUUd",
+                  "idShort": 4,
+                  "name": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。☞",
+                  "id": "595654576cca9762f38c9ece"
+              }
+          },
+          "date": "2015-01-09T18:43:56.289Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createCard",
+          "display": {
+              "translationKey": "action_create_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "shortLink": "UlhkFUUd",
+                      "id": "595654576cca9762f38c9ece",
+                      "text": "ボードにメンバーを追加してみましょう。「ボードメニューを開く」からボードメニューを開くと追加できます。他のメンバーをボードに追加することで、共同作業や案件の共有、ディスカッションが簡単にできるようになります。☞"
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9edc",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "list": {
+                  "_id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）",
+                  "id": "595654576cca9762f38c9eaf"
+              },
+              "card": {
+                  "_id": "595654576cca9762f38c9ec9",
+                  "shortLink": "rlJzoJEd",
+                  "idShort": 3,
+                  "name": "カードとリストは、必要なだけ追加できます。",
+                  "id": "595654576cca9762f38c9ec9"
+              }
+          },
+          "date": "2015-01-09T18:43:42.277Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createCard",
+          "display": {
+              "translationKey": "action_create_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "shortLink": "rlJzoJEd",
+                      "id": "595654576cca9762f38c9ec9",
+                      "text": "カードとリストは、必要なだけ追加できます。"
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ed8",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "list": {
+                  "_id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）",
+                  "id": "595654576cca9762f38c9eaf"
+              },
+              "card": {
+                  "_id": "595654576cca9762f38c9eb3",
+                  "shortLink": "QB1UIzwU",
+                  "idShort": 1,
+                  "name": "これはカードです。「やったこと」リストにドラッグして作業が終わったということを明示しましょう。 ☞",
+                  "id": "595654576cca9762f38c9eb3"
+              }
+          },
+          "date": "2015-01-09T18:37:10.496Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createCard",
+          "display": {
+              "translationKey": "action_create_card",
+              "entities": {
+                  "card": {
+                      "type": "card",
+                      "shortLink": "QB1UIzwU",
+                      "id": "595654576cca9762f38c9eb3",
+                      "text": "これはカードです。「やったこと」リストにドラッグして作業が終わったということを明示しましょう。 ☞"
+                  },
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ed7",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "list": {
+                  "_id": "595654576cca9762f38c9eb0",
+                  "name": "やったこと(別リスト)",
+                  "id": "595654576cca9762f38c9eb0"
+              }
+          },
+          "date": "2015-01-09T18:36:31.860Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createList",
+          "display": {
+              "translationKey": "action_added_list_to_board",
+              "entities": {
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eb0",
+                      "text": "やったこと(別リスト)"
+                  },
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "HF8XAoZd"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ed6",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              },
+              "list": {
+                  "_id": "595654576cca9762f38c9eaf",
+                  "name": "やってみる（これは「リスト」です）",
+                  "id": "595654576cca9762f38c9eaf"
+              }
+          },
+          "date": "2015-01-09T18:36:19.442Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createList",
+          "display": {
+              "translationKey": "action_added_list_to_board",
+              "entities": {
+                  "list": {
+                      "type": "list",
+                      "id": "595654576cca9762f38c9eaf",
+                      "text": "やってみる（これは「リスト」です）"
+                  },
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "HF8XAoZd"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      },
+      {
+          "id": "595654576cca9762f38c9ed5",
+          "data": {
+              "board": {
+                  "_id": "595654576cca9762f38c9eae",
+                  "shortLink": "HF8XAoZd",
+                  "name": "ウェルカムボード",
+                  "id": "595654576cca9762f38c9eae"
+              }
+          },
+          "date": "2015-01-09T18:35:46.524Z",
+          "idMemberCreator": "4e6a7fad05d98b02ba00845c",
+          "type": "createBoard",
+          "display": {
+              "translationKey": "action_create_board",
+              "entities": {
+                  "board": {
+                      "type": "board",
+                      "id": "595654576cca9762f38c9eae",
+                      "text": "ウェルカムボード",
+                      "shortLink": "HF8XAoZd"
+                  },
+                  "memberCreator": {
+                      "type": "member",
+                      "id": "4e6a7fad05d98b02ba00845c",
+                      "username": "trello",
+                      "text": "Trello"
+                  }
+              }
+          },
+          "memberCreator": {
+              "id": "4e6a7fad05d98b02ba00845c",
+              "activityBlocked": false,
+              "avatarUrl": "https://trello-members.s3.amazonaws.com/4e6a7fad05d98b02ba00845c/c2517779a450090dafcc74c26023d627",
+              "bio": "",
+              "bioData": null,
+              "confirmed": true,
+              "idEnterprise": null,
+              "memberType": "normal",
+              "products": [],
+              "url": "https://trello.com/trello",
+              "fullName": "Trello",
+              "idMemberReferrer": null,
+              "idPremOrgsAdmin": [],
+              "initials": "T",
+              "nonPublic": {},
+              "nonPublicAvailable": true,
+              "username": "trello"
+          }
+      }
+  ]
+}
