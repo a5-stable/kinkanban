@@ -211,7 +211,10 @@ const Lane: any = ({ section }: { section: Section }) => {
 
   return(
     <>
-      <Grid item>
+      <Grid
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={(e) => onItemsDrop(e, section.id)}
+      >
         <SectionCard>
           <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -226,13 +229,7 @@ const Lane: any = ({ section }: { section: Section }) => {
               >
                 + Add Story
               </Button>
-              <div
-               className="items"
-               onDragOver={(e) => e.preventDefault()}
-               onDrop={(e) => onItemsDrop(e, section.id)}
-              >
-                {Items(state[section.id], section.id)}
-              </div>
+              {Items(state[section.id], section.id)}
             </Typography>
           </CardContent>
         </SectionCard>
