@@ -11,6 +11,7 @@ import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
 
 const Lane: any = ({ sectionId, stories }) => {
+  console.log(stories);
   const SectionCard = styled(Card) ({
     height: "100%",
     width: "300px",
@@ -47,9 +48,7 @@ const Lane: any = ({ sectionId, stories }) => {
   type Item = { id: number; title?: string; isDragOver: boolean };
   type State = any;
 
-  const initialState: State = {
-    [sectionId]: []
-  };
+  const initialState: State = stories
 
   function reducer(state: State, action: Action): State {
     switch (action.type) {
@@ -63,13 +62,13 @@ const Lane: any = ({ sectionId, stories }) => {
           id = res.data.id;
         });
 
-        return {
-          ...state,
-          [action.sectionId]: [
-            { id: id, isDragOver: false },
-            ...state[action.sectionId]
-          ]
-        };
+        const newParams = {
+          id: id,
+          sectionId: action.sectionId,
+          title: "New Title"
+        }
+
+        return [newParams, ...state]
       }
       case "UPDATE_CATEGORY": {
         const { position, oldSectionId, newSectionId } = action;
@@ -117,6 +116,10 @@ const Lane: any = ({ sectionId, stories }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [add, setAdd] = useState(false);
   const [addInput, setAddInput] = useState("");
+
+  useEffect(() => {
+    console.log(stories);
+  }, [])
 
   const Items = (items: Item[], sectionId: number) => {
     const itemsa = typeof items === "undefined" ? [] : items
@@ -218,7 +221,7 @@ const Lane: any = ({ sectionId, stories }) => {
               >
                 + Add Story
               </Button>
-              {Items(stories, sectionId)}
+              {Items(state, sectionId)}
             </Typography>
           </CardContent>
         </SectionCard>
