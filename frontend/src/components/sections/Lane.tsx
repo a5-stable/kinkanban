@@ -10,6 +10,8 @@ import Box from '@mui/material/Box';
 import CardActions from '@mui/material/CardActions';
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
+import TextField from '@mui/material/TextField';
+import StoryCard from "./StoryCard";
 
 const Lane: any = ({ sectionId, stories }) => {
   console.log(stories);
@@ -66,7 +68,6 @@ const Lane: any = ({ sectionId, stories }) => {
         const newParams = {
           id: id,
           sectionId: action.sectionId,
-          title: "New Title"
         }
 
         return [newParams, ...state]
@@ -122,65 +123,43 @@ const Lane: any = ({ sectionId, stories }) => {
     console.log(stories);
   }, [])
 
+  const updateDragOver = (id) => {
+    dispatch({
+      type: "UPDATE_DRAG_OVER",
+      sectionId,
+      id,
+      isDragOver: true
+    });
+  }
+
+  const updateCategory = (id, newSectionId, oldSectionId, position) => {
+    dispatch({
+      type: "UPDATE_CATEGORY",
+      id: id,
+      newSectionId: newSectionId,
+      oldSectionId: oldSectionId,
+      position
+    });
+  }
+
+  const deleteItem = (sectionId, id) => {
+    dispatch({ type: "DELETE", sectionId, id })
+  }
+
   const Items = (items: Item[], sectionId: number) => {
     const itemsa = typeof items === "undefined" ? [] : items
-    return itemsa.map(({ id, title, isDragOver }) => (
-      <Card
-        variant="outlined"
-        
-        key={id}
-        draggable={true}
-        onDragStart={(e: React.DragEvent<HTMLDivElement>) => {
-          e.dataTransfer.setData(
-            "text/plain",
-            JSON.stringify({ id, title, sectionId, isDragOver })
-          );
-        }}
-        onDragOver={(e: React.DragEvent<HTMLDivElement>) => {
-          e.preventDefault();
-          dispatch({
-            type: "UPDATE_DRAG_OVER",
-            sectionId,
-            id,
-            isDragOver: true
-          });
-        }}
-        onDragLeave={(e: React.DragEvent<HTMLDivElement>) => {
-          e.preventDefault();
-          dispatch({
-            type: "UPDATE_DRAG_OVER",
-            sectionId,
-            id,
-            isDragOver: false
-          });
-        }}
-        onDrop={(e: React.DragEvent<HTMLDivElement>) => {
-          e.stopPropagation();
-          const item = e.dataTransfer.getData("text/plain");
-          const parsedItem = JSON.parse(item);
-          const position = state[sectionId].findIndex((i: number) => i.id === id);
-          dispatch({
-            type: "UPDATE_CATEGORY",
-            id: parsedItem.id,
-            newSectionId: sectionId,
-            oldSectionId: parsedItem.category,
-            position
-          });
-          dispatch({
-            type: "UPDATE_DRAG_OVER",
-            sectionId,
-            id,
-            isDragOver: false,
-          });
-        }}
+    return itemsa.map(({ id, title, isDragOver }, index) => (
+      <StoryCard
+        id={id}
+        title={title}
+        isDragOver={isDragOver}
+        sectionId={sectionId}
+        updateDragOver={updateDragOver}
+        updateCategory={updateCategory}
+        deleteItem={deleteItem}
+        position={index}
       >
-        <CardContent>
-          <p>{title || "No Title"}</p>
-          <button onClick={() => dispatch({ type: "DELETE", sectionId, id })}>
-            削除する
-          </button>
-        </CardContent>
-      </Card>
+      </StoryCard>
     ));
   };
 
@@ -188,6 +167,7 @@ const Lane: any = ({ sectionId, stories }) => {
     const value = event.currentTarget.value;
     setAddInput(value);
   };
+
 
   const onItemsDrop = (
     e: React.DragEvent<HTMLDivElement>,
