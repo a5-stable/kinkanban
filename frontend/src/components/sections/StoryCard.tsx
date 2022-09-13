@@ -58,7 +58,7 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, updateDragOver, upda
             placeholder={title || "No Title"}
             onBlur={submitItemTitle}
           />
-          <button onClick={() => deleteItem}>
+          <button onClick={() => deleteItem(sectionId, id)}>
             削除する
           </button>
         </CardContent>

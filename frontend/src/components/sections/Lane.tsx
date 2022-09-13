@@ -104,13 +104,14 @@ const Lane: any = ({ sectionId, stories }) => {
         };
       }
       case "DELETE": {
-        const filtered = state[action.sectionId].filter(
+        client.delete(`stories/${action.id}`).then(() => {
+        });
+
+        const filtered = state.filter(
           (item: any) => item.id !== action.id
         );
-        return {
-          ...state,
-          [action.sectionId]: filtered
-        };
+
+        return filtered;
       }
     }
   }
