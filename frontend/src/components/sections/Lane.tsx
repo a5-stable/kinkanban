@@ -6,7 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Section, Story } from "../../interfaces";
-
+import Box from '@mui/material/Box';
+import CardActions from '@mui/material/CardActions';
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
 
@@ -124,7 +125,9 @@ const Lane: any = ({ sectionId, stories }) => {
   const Items = (items: Item[], sectionId: number) => {
     const itemsa = typeof items === "undefined" ? [] : items
     return itemsa.map(({ id, title, isDragOver }) => (
-      <div
+      <Card
+        variant="outlined"
+        
         key={id}
         draggable={true}
         onDragStart={(e: React.DragEvent<HTMLDivElement>) => {
@@ -171,13 +174,13 @@ const Lane: any = ({ sectionId, stories }) => {
           });
         }}
       >
-        <div className={"itemContent" + (isDragOver ? " dashed" : "")}>
-          <h2>{title}</h2>
+        <CardContent>
+          <p>{title || "No Title"}</p>
           <button onClick={() => dispatch({ type: "DELETE", sectionId, id })}>
             削除する
           </button>
-        </div>
-      </div>
+        </CardContent>
+      </Card>
     ));
   };
 
