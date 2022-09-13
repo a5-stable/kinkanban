@@ -11,6 +11,8 @@ import CardActions from '@mui/material/CardActions';
 import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
 import TextField from '@mui/material/TextField';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { IconButton } from "@material-ui/core";
 
 const StoryCard: any = ({ id, title, isDragOver, sectionId, updateDragOver, updateCategory, deleteItem, position }) => {
 
@@ -58,9 +60,12 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, updateDragOver, upda
             placeholder={title || "No Title"}
             onBlur={submitItemTitle}
           />
-          <button onClick={() => deleteItem(sectionId, id)}>
-            削除する
-          </button>
+          <IconButton
+            aria-label="delete"
+            onClick={() => deleteItem(sectionId, id)}
+          >
+            <DeleteIcon />
+          </IconButton>
         </CardContent>
       </Card>
     </>
