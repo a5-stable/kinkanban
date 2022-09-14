@@ -104,6 +104,10 @@ const Kanban: React.FC = () => {
         const newSectionList =
           newSectionId === oldSectionId ? filtered : [...state[newSectionId]];
 
+        client.patch(`stories/${action.id}`, { story: { section_id: newSectionId } }).then((res) => {
+          console.log(res);
+        });
+
         return {
           ...state,
           [oldSectionId]: filtered,
