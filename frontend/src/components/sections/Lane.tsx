@@ -13,110 +13,13 @@ import Input from '@mui/material/Input';
 import TextField from '@mui/material/TextField';
 import StoryCard from "./StoryCard";
 
-const Lane: any = ({ sectionId, stories }) => {
+const Lane: any = ({ sectionId, stories, dispatch }) => {
   console.log(stories);
   const SectionCard = styled(Card) ({
     height: "100%",
     width: "300px",
   });
 
-  type Action =
-    | { 
-        type: "CREATE";
-        sectionId: number;
-      }
-    | {
-        type: "UPDATE_CATEGORY";
-        id: number;
-        newSectionId: number;
-        oldSectionId: number;
-        position: number;
-      }
-    | {
-        type: "UPDATE_DRAG_OVER";
-        id: number;
-        sectionId: number;
-        isDragOver: boolean;
-      }
-    | { 
-        type: "DELETE";
-        id: number;
-        sectionId: number;
-      }
-    | {
-        type: "INITIALIZE";
-        payload: any;
-      }
-
-  type Item = { id: number; title?: string; isDragOver: boolean };
-  type State = any;
-
-  const initialState: State = stories
-
-  function reducer(state: State, action: Action): State {
-    switch (action.type) {
-      case "CREATE": {
-        let id = null;
-        const params = {
-          section_id: action.sectionId,
-        }
-    
-        client.post(`stories`, { story: params }).then((res) => {
-          id = res.data.id;
-        });
-
-        const newParams = {
-          id: id,
-          sectionId: action.sectionId,
-        }
-
-        return [newParams, ...state]
-      }
-      case "UPDATE_CATEGORY": {
-        const { position, oldSectionId, newSectionId } = action;
-        const item = state[oldSectionId].find(({ id }) => id === action.id);
-        if (!item) return state;
-
-        const filtered = state[oldSectionId].filter(({ id }) => id !== action.id);
-        const newSectionList =
-          newSectionId === oldSectionId ? filtered : [...state[newSectionId]];
-
-        return {
-          ...state,
-          [oldSectionId]: filtered,
-          [newSectionId]: [
-            ...newSectionList.slice(0, position),
-            item,
-            ...newSectionList.slice(position)
-          ]
-        };
-      }
-      case "UPDATE_DRAG_OVER": {
-        const updated = state[action.sectionId].map((item: Item) => {
-          if (item.id === action.id) {
-            return { ...item, isDragOver: action.isDragOver };
-          }
-          return item;
-        });
-        return {
-          ...state,
-          [action.sectionId]: updated
-        };
-      }
-      case "DELETE": {
-        client.delete(`stories/${action.id}`).then(() => {
-        });
-
-        const filtered = state.filter(
-          (item: any) => item.id !== action.id
-        );
-
-        return filtered;
-      }
-    }
-  }
-
-  const [state, dispatch] = useReducer(reducer, initialState);
   const [add, setAdd] = useState(false);
   const [addInput, setAddInput] = useState("");
 
@@ -147,7 +50,7 @@ const Lane: any = ({ sectionId, stories }) => {
     dispatch({ type: "DELETE", sectionId, id })
   }
 
-  const Items = (items: Item[], sectionId: number) => {
+  const Items = (items: any, sectionId: number) => {
     const itemsa = typeof items === "undefined" ? [] : items
     return itemsa.map(({ id, title, isDragOver }, index) => (
       <StoryCard
@@ -181,7 +84,7 @@ const Lane: any = ({ sectionId, stories }) => {
       id: parsedItem.id,
       newSectionId,
       oldSectionId: parsedItem.sectionId,
-      position: state[newSectionId].length
+      position: 2
     });
   };
 
@@ -205,7 +108,7 @@ const Lane: any = ({ sectionId, stories }) => {
               >
                 + Add Story
               </Button>
-              {Items(state, sectionId)}
+              {Items(stories, sectionId)}
             </Typography>
           </CardContent>
         </SectionCard>
