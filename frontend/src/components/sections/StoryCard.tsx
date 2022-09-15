@@ -13,33 +13,25 @@ import Input from '@mui/material/Input';
 import TextField from '@mui/material/TextField';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton } from "@material-ui/core";
+import { SortableItem } from "./SortableItem";
+import { useSortable } from '@dnd-kit/sortable';
 
 const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }) => {
+
+  const {
+    setNodeRef,
+    attributes,
+    listeners,
+    transition,
+    transform,
+    isDragging,
+  } = useSortable({ id: id })
 
   const submitItemTitle = (e) => {
     const newTitle = e.target.value; // 他の書き方
     client.patch(`stories/${id}`, { story: { title: newTitle }}).then((res) => {
       console.log(res);
     })
-  }
-
-  const updateDragOver = (id) => {
-    dispatch({
-      type: "UPDATE_DRAG_OVER",
-      sectionId,
-      id,
-      isDragOver: true
-    });
-  }
-
-  const updateCategory = (id, newSectionId, oldSectionId, position) => {
-    dispatch({
-      type: "UPDATE_CATEGORY",
-      id: id,
-      newSectionId: newSectionId,
-      oldSectionId: oldSectionId,
-      position
-    });
   }
 
   const deleteItem = (sectionId, id) => {
@@ -49,37 +41,9 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }
   return(
     <>
       <Card
-        variant="outlined"
-        key={id}
-        draggable={true}
-        onDragStart={(e: React.DragEvent<HTMLDivElement>) => {
-          e.dataTransfer.setData(
-            "text/plain",
-            JSON.stringify({ id, title, sectionId, isDragOver })
-          );
-        }}
-        onDragOver={(e: React.DragEvent<HTMLDivElement>) => {
-          e.preventDefault();
-          dispatch({
-            type: "UPDATE_DRAG_OVER",
-            sectionId,
-            id,
-            isDragOver: true
-          });
-        }}
-        onDragLeave={(e: React.DragEvent<HTMLDivElement>) => {
-          e.preventDefault();
-          updateDragOver(id)
-        }}
-        onDrop={(e: React.DragEvent<HTMLDivElement>) => {
-          e.stopPropagation();
-          console.log(e);
-          const item = e.dataTransfer.getData("text/plain");
-          const parsedItem = JSON.parse(item);
-          const pos = position;
-          updateCategory(id, sectionId, parsedItem.category, pos)
-          updateDragOver(id)
-        }}
+        ref={setNodeRef}
+        {...attributes}
+        {...listeners}
       >
         <CardContent>
           <TextField

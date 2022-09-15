@@ -9,6 +9,9 @@ import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Counter from './Counter'
 import Kanb from "./Lane";
+import { SortableContext } from "@dnd-kit/sortable";
+import { SortableItem } from "./SortableItem";
+import { DndContext, PointerSensor, useSensor } from "@dnd-kit/core";
 
 const Kanban: React.FC = () => {
   const { id } = useParams();
@@ -96,7 +99,6 @@ const Kanban: React.FC = () => {
         return {...state, [action.sectionId]: [ ...state[action.sectionId], newParams ]}
       }
       case "UPDATE_CATEGORY": {
-        console.log(action)
         const { position, oldSectionId, newSectionId } = action;
         if(oldSectionId == null) return state; //同じセクション内での移動
 
@@ -151,6 +153,14 @@ const Kanban: React.FC = () => {
 
   return (
     <>
+    <div
+      style={{
+        margin: 'auto',
+        width: 200,
+        textAlign: 'center'
+      }}
+    >
+    </div>
       <KanbanContainer>
         {Object.keys(data).map((key) => (
           <Lane

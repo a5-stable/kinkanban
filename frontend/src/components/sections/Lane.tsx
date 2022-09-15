@@ -13,6 +13,9 @@ import Input from '@mui/material/Input';
 import TextField from '@mui/material/TextField';
 import StoryCard from "./StoryCard";
 import Spacer from "./Spacer";
+import { arrayMove, SortableContext, sortableKeyboardCoordinates, verticalListSortingStrategy } from "@dnd-kit/sortable";
+import { SortableItem } from "./SortableItem";
+import { closestCenter, DndContext, DragOverlay, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
 
 const Lane: any = ({ sectionId, stories, dispatch }) => {
   const SectionCard = styled(Card) ({
@@ -44,36 +47,30 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
     ));
   };
 
-  const onAddInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const value = event.currentTarget.value;
-    setAddInput(value);
-  };
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
 
-
-  const onItemsDrop = (
-    e: React.DragEvent<HTMLDivElement>,
-    newSectionId: number
-  ) => {
-    const item = e.dataTransfer.getData("text/plain");
-    const parsedItem = JSON.parse(item);
-    const position = stories.findIndex((i) => i.id === parsedItem.id) + 1;
-    console.log(position);
-
-    dispatch({
-      type: "UPDATE_CATEGORY",
-      id: parsedItem.id,
-      newSectionId,
-      oldSectionId: parsedItem.sectionId,
-      position: position
-    });
-  };
+  function handleDragEnd(event) {
+    const {active, over} = event;
+    
+    if (active.id !== over.id) {
+      setItems((items) => {
+        const oldIndex = items.indexOf(active.id);
+        const newIndex = items.indexOf(over.id);
+        
+        return arrayMove(items, oldIndex, newIndex);
+      });
+    }
+  }
 
   return(
     <>
-      <Grid
-        onDragOver={(e) => e.preventDefault()}
-        onDrop={(e) => onItemsDrop(e, sectionId)}
-      >
+
+      <Grid>
         <SectionCard>
           <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -88,7 +85,32 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
               >
                 + Add Story
               </Button>
-              {Items(stories, sectionId)}
+              <DndContext
+                sensors={sensors}
+                collisionDetection={closestCenter}
+                onDragEnd={handleDragEnd}
+              >
+                <SortableContext
+                  items={stories}
+                  strategy={verticalListSortingStrategy}
+                >
+                  {stories.map(({ id, title, isDragOver }, index) => (
+                    <>
+                      <Spacer y={2} />
+                      <StoryCard
+                        id={id}
+                        title={title}
+                        isDragOver={isDragOver}
+                        sectionId={sectionId}
+                        dispatch={dispatch}
+                        position={index}
+                      >
+                      </StoryCard>
+                   </>
+                  ))}
+                </SortableContext>
+
+              </DndContext>
             </Typography>
           </CardContent>
         </SectionCard>
