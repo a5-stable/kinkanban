@@ -14,13 +14,36 @@ import TextField from '@mui/material/TextField';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton } from "@material-ui/core";
 
-const StoryCard: any = ({ id, title, isDragOver, sectionId, updateDragOver, updateCategory, deleteItem, position }) => {
+const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }) => {
 
   const submitItemTitle = (e) => {
     const newTitle = e.target.value; // 他の書き方
     client.patch(`stories/${id}`, { story: { title: newTitle }}).then((res) => {
       console.log(res);
     })
+  }
+
+  const updateDragOver = (id) => {
+    dispatch({
+      type: "UPDATE_DRAG_OVER",
+      sectionId,
+      id,
+      isDragOver: true
+    });
+  }
+
+  const updateCategory = (id, newSectionId, oldSectionId, position) => {
+    dispatch({
+      type: "UPDATE_CATEGORY",
+      id: id,
+      newSectionId: newSectionId,
+      oldSectionId: oldSectionId,
+      position
+    });
+  }
+
+  const deleteItem = (sectionId, id) => {
+    dispatch({ type: "DELETE", sectionId, id })
   }
 
   return(
@@ -37,7 +60,12 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, updateDragOver, upda
         }}
         onDragOver={(e: React.DragEvent<HTMLDivElement>) => {
           e.preventDefault();
-          updateDragOver(id)
+          dispatch({
+            type: "UPDATE_DRAG_OVER",
+            sectionId,
+            id,
+            isDragOver: true
+          });
         }}
         onDragLeave={(e: React.DragEvent<HTMLDivElement>) => {
           e.preventDefault();
@@ -45,6 +73,7 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, updateDragOver, upda
         }}
         onDrop={(e: React.DragEvent<HTMLDivElement>) => {
           e.stopPropagation();
+          console.log(e);
           const item = e.dataTransfer.getData("text/plain");
           const parsedItem = JSON.parse(item);
           const pos = position;

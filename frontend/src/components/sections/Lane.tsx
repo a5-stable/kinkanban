@@ -12,9 +12,9 @@ import Grid from '@mui/material/Grid';
 import Input from '@mui/material/Input';
 import TextField from '@mui/material/TextField';
 import StoryCard from "./StoryCard";
+import Spacer from "./Spacer";
 
 const Lane: any = ({ sectionId, stories, dispatch }) => {
-  console.log(stories);
   const SectionCard = styled(Card) ({
     height: "100%",
     width: "300px",
@@ -24,46 +24,23 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
   const [addInput, setAddInput] = useState("");
 
   useEffect(() => {
-    console.log(stories);
   }, [])
-
-  const updateDragOver = (id) => {
-    dispatch({
-      type: "UPDATE_DRAG_OVER",
-      sectionId,
-      id,
-      isDragOver: true
-    });
-  }
-
-  const updateCategory = (id, newSectionId, oldSectionId, position) => {
-    dispatch({
-      type: "UPDATE_CATEGORY",
-      id: id,
-      newSectionId: newSectionId,
-      oldSectionId: oldSectionId,
-      position
-    });
-  }
-
-  const deleteItem = (sectionId, id) => {
-    dispatch({ type: "DELETE", sectionId, id })
-  }
 
   const Items = (items: any, sectionId: number) => {
     const itemsa = typeof items === "undefined" ? [] : items
     return itemsa.map(({ id, title, isDragOver }, index) => (
-      <StoryCard
-        id={id}
-        title={title}
-        isDragOver={isDragOver}
-        sectionId={sectionId}
-        updateDragOver={updateDragOver}
-        updateCategory={updateCategory}
-        deleteItem={deleteItem}
-        position={index}
-      >
-      </StoryCard>
+      <>
+        <Spacer y={2} />
+        <StoryCard
+          id={id}
+          title={title}
+          isDragOver={isDragOver}
+          sectionId={sectionId}
+          dispatch={dispatch}
+          position={index}
+        >
+        </StoryCard>
+      </>
     ));
   };
 
@@ -79,12 +56,15 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
   ) => {
     const item = e.dataTransfer.getData("text/plain");
     const parsedItem = JSON.parse(item);
+    const position = stories.findIndex((i) => i.id === parsedItem.id) + 1;
+    console.log(position);
+
     dispatch({
       type: "UPDATE_CATEGORY",
       id: parsedItem.id,
       newSectionId,
       oldSectionId: parsedItem.sectionId,
-      position: 2
+      position: position
     });
   };
 
@@ -103,7 +83,7 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
             </Typography>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
               <Button
-                onClick={() => dispatch({ type: "CREATE", sectionId: sectionId})}
+                onClick={() => dispatch({ type: "CREATE", sectionId: sectionId })}
                 color="secondary"
               >
                 + Add Story

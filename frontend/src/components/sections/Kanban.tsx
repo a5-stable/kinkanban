@@ -85,7 +85,7 @@ const Kanban: React.FC = () => {
         }
     
         client.post(`stories`, { story: params }).then((res) => {
-          id = res.data.id;
+          id = res.data.id; //意味ない
         });
 
         const newParams = {
@@ -96,7 +96,10 @@ const Kanban: React.FC = () => {
         return {...state, [action.sectionId]: [ ...state[action.sectionId], newParams ]}
       }
       case "UPDATE_CATEGORY": {
+        console.log(action)
         const { position, oldSectionId, newSectionId } = action;
+        if(oldSectionId == null) return state; //同じセクション内での移動
+
         const item = state[oldSectionId].find(({ id }) => id === action.id);
         if (!item) return state;
 
@@ -119,7 +122,6 @@ const Kanban: React.FC = () => {
         };
       }
       case "UPDATE_DRAG_OVER": {
-        console.log(action);
         const updated = state[action.sectionId].map((item: Item) => {
           if (item.id === action.id) {
             return { ...item, isDragOver: action.isDragOver };
