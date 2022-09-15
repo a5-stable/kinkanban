@@ -28,6 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_13_135923) do
   create_table "stories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "title"
     t.integer "section_id", null: false
+    t.integer "position", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
