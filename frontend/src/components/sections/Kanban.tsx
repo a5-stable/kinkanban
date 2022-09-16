@@ -9,15 +9,15 @@ import { styled } from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Counter from './Counter'
 import Kanb from "./Lane";
-import { SortableContext } from "@dnd-kit/sortable";
+import { arrayMove, SortableContext, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 import { SortableItem } from "./SortableItem";
-import { DndContext, PointerSensor, useSensor } from "@dnd-kit/core";
+import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
 
 const Kanban: React.FC = () => {
   const { id } = useParams();
   const [ sections, setSections ] = useState<Section[]>([])
   const [ title, setTitle ] = useState<string>("")
-  const [ data, dispatch] = useReducer(reducer, {});
+  const [ data, dispatch ] = useReducer(reducer, {});
 
 
   const handleAddSection = () => {
@@ -54,18 +54,19 @@ const Kanban: React.FC = () => {
         sectionId: number;
       }
     | {
-        type: "UPDATE_CATEGORY";
-        id: number;
-        newSectionId: number;
-        oldSectionId: number;
-        position: number;
+        type: "UPDATE_SECTION";
+        activeContainerId: number,
+        activeIndex: number,
+        overContainerId: number,
+        overIndex: number,
+        activeId: number
       }
     | {
-        type: "UPDATE_DRAG_OVER";
-        id: number;
-        sectionId: number;
-        isDragOver: boolean;
-      }
+      type: "REORDER";
+      sectionId: number;
+      activeIndex: number;
+      overIndex: number;
+    }
     | { 
         type: "DELETE";
         id: number;
@@ -78,6 +79,39 @@ const Kanban: React.FC = () => {
 
   type Item = { id: number; title?: string; isDragOver: boolean };
   type State = any;
+
+  const handleDragEnd = (event) => {
+    const { active, over } = event
+
+    if (!over) {
+      return;
+    }
+
+    if (active.id !== over.id) {
+      const activeContainerId = active.data.current.sortable.containerId;
+      const overContainerId = over.data.current.sortable.containerId;
+      const activeIndex = active.data.current.sortable.index;
+      const overIndex = over.data.current.sortable.index;
+
+      if (activeContainerId === overContainerId) {
+        dispatch({
+          type: "REORDER",
+          sectionId: activeContainerId,
+          activeIndex: activeIndex,
+          overIndex: overIndex
+        })
+      } else {
+        dispatch({
+          type: "UPDATE_SECTION",
+          activeContainerId: activeContainerId,
+          activeIndex: activeIndex,
+          overContainerId: overContainerId,
+          overIndex: overIndex,
+          activeId: active.id
+        })
+      }
+    }
+  };
 
   function reducer(state: State, action: Action): State {
     switch (action.type) {
@@ -98,41 +132,23 @@ const Kanban: React.FC = () => {
 
         return {...state, [action.sectionId]: [ ...state[action.sectionId], newParams ]}
       }
-      case "UPDATE_CATEGORY": {
-        const { position, oldSectionId, newSectionId } = action;
-        if(oldSectionId == null) return state; //同じセクション内での移動
-
-        const item = state[oldSectionId].find(({ id }) => id === action.id);
-        if (!item) return state;
-
-        const filtered = state[oldSectionId].filter(({ id }) => id !== action.id);
-        const newSectionList =
-          newSectionId === oldSectionId ? filtered : [...state[newSectionId]];
-
-        client.patch(`stories/${action.id}`, { story: { section_id: newSectionId } }).then((res) => {
-          console.log(res);
-        });
-
-        return {
+      case "UPDATE_SECTION": {
+        const { activeContainerId, activeIndex, overContainerId, overIndex, activeId } = action
+        return  {
           ...state,
-          [oldSectionId]: filtered,
-          [newSectionId]: [
-            ...newSectionList.slice(0, position),
-            item,
-            ...newSectionList.slice(position)
-          ]
+          [activeContainerId]: [...state[activeContainerId].slice(0, activeIndex), ...state[activeContainerId].slice(activeIndex + 1)],
+          [overContainerId]: [...state[overContainerId].slice(0, overIndex), state[activeContainerId][activeId-1], ...state[overContainerId].slice(overIndex + 1)]
         };
       }
-      case "UPDATE_DRAG_OVER": {
-        const updated = state[action.sectionId].map((item: Item) => {
-          if (item.id === action.id) {
-            return { ...item, isDragOver: action.isDragOver };
-          }
-          return item;
-        });
+      case "REORDER": {
+        const { sectionId, activeIndex, overIndex } = action;
         return {
           ...state,
-          [action.sectionId]: updated
+          [sectionId]: arrayMove(
+            state[sectionId],
+            activeIndex,
+            overIndex
+          )
         };
       }
       case "DELETE": {
@@ -151,6 +167,13 @@ const Kanban: React.FC = () => {
     }
   }
 
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
+
   return (
     <>
     <div
@@ -162,13 +185,19 @@ const Kanban: React.FC = () => {
     >
     </div>
       <KanbanContainer>
-        {Object.keys(data).map((key) => (
-          <Lane
-            sectionId={key}
-            stories={data[key]}
-            dispatch={dispatch}
-          />
-        ))}
+        <DndContext
+          sensors={sensors}
+          collisionDetection={closestCenter}
+          onDragEnd={handleDragEnd}
+        >
+          {Object.keys(data).map((key) => (
+            <Lane
+              sectionId={key}
+              stories={data[key]}
+              dispatch={dispatch}
+            />
+          ))}
+        </DndContext>
         <div style={{width: "300px"}}>
           <Button 
             variant="text"

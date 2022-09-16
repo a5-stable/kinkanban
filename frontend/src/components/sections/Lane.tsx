@@ -54,22 +54,8 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
     })
   );
 
-  function handleDragEnd(event) {
-    const {active, over} = event;
-    
-    if (active.id !== over.id) {
-      setItems((items) => {
-        const oldIndex = items.indexOf(active.id);
-        const newIndex = items.indexOf(over.id);
-        
-        return arrayMove(items, oldIndex, newIndex);
-      });
-    }
-  }
-
   return(
     <>
-
       <Grid>
         <SectionCard>
           <CardContent>
@@ -85,12 +71,8 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
               >
                 + Add Story
               </Button>
-              <DndContext
-                sensors={sensors}
-                collisionDetection={closestCenter}
-                onDragEnd={handleDragEnd}
-              >
                 <SortableContext
+                  id={sectionId}
                   items={stories}
                   strategy={verticalListSortingStrategy}
                 >
@@ -109,8 +91,6 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
                    </>
                   ))}
                 </SortableContext>
-
-              </DndContext>
             </Typography>
           </CardContent>
         </SectionCard>
