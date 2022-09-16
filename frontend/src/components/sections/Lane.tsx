@@ -81,6 +81,7 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
                       <Spacer y={2} />
                       <StoryCard
                         id={id}
+                        key={id}
                         title={title}
                         isDragOver={isDragOver}
                         sectionId={sectionId}

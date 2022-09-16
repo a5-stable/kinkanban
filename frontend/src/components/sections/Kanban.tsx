@@ -59,7 +59,7 @@ const Kanban: React.FC = () => {
         activeIndex: number,
         overContainerId: number,
         overIndex: number,
-        activeId: number
+        id: number
       }
     | {
       type: "REORDER";
@@ -107,7 +107,7 @@ const Kanban: React.FC = () => {
           activeIndex: activeIndex,
           overContainerId: overContainerId,
           overIndex: overIndex,
-          activeId: active.id
+          id: active.id
         })
       }
     }
@@ -133,11 +133,12 @@ const Kanban: React.FC = () => {
         return {...state, [action.sectionId]: [ ...state[action.sectionId], newParams ]}
       }
       case "UPDATE_SECTION": {
-        const { activeContainerId, activeIndex, overContainerId, overIndex, activeId } = action
+        const { activeContainerId, activeIndex, overContainerId, overIndex, id } = action
+        const active = state[activeContainerId].filter((item) =>  item.id === id )
         return  {
           ...state,
           [activeContainerId]: [...state[activeContainerId].slice(0, activeIndex), ...state[activeContainerId].slice(activeIndex + 1)],
-          [overContainerId]: [...state[overContainerId].slice(0, overIndex), state[activeContainerId][activeId-1], ...state[overContainerId].slice(overIndex + 1)]
+          [overContainerId]: [...state[overContainerId].slice(0, overIndex + 1), active[0], ...state[overContainerId].slice(overIndex + 1)]
         };
       }
       case "REORDER": {
@@ -192,6 +193,7 @@ const Kanban: React.FC = () => {
         >
           {Object.keys(data).map((key) => (
             <Lane
+              key={key}
               sectionId={key}
               stories={data[key]}
               dispatch={dispatch}
