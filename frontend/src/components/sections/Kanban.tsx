@@ -80,6 +80,32 @@ const Kanban: React.FC = () => {
   type Item = { id: number; title?: string; isDragOver: boolean };
   type State = any;
 
+  const handleDragOver = ( event ) => {
+    const { active, over } = event;
+    const overId = over.id;
+
+    if (!overId) {
+      return;
+    }
+
+    const activeContainerId = active.data.current.sortable.containerId;
+    const overContainerId = over.data.current.sortable.containerId;
+
+    if (activeContainerId !== overContainerId) {
+      const activeIndex = active.data.current.sortable.index;
+      const overIndex = over.data.current.sortable.index;
+
+      dispatch({ 
+        type: "UPDATE_SECTION",
+        activeContainerId: activeContainerId,
+        activeIndex: activeIndex,
+        overContainerId: overContainerId,
+        overIndex: overIndex,
+        id: active.id
+      })
+    }
+  };
+
   const handleDragEnd = (event) => {
     const { active, over } = event
 
@@ -171,7 +197,7 @@ const Kanban: React.FC = () => {
   const sensors = useSensors(
     useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
-      coordinateGetter: sortableKeyboardCoordinates,
+      coordinateGetter: sortableKeyboardCoordinates
     })
   );
 
@@ -189,6 +215,7 @@ const Kanban: React.FC = () => {
         <DndContext
           sensors={sensors}
           collisionDetection={closestCenter}
+          onDragOver={handleDragOver}
           onDragEnd={handleDragEnd}
         >
           {Object.keys(data).map((key) => (
