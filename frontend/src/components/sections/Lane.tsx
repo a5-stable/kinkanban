@@ -54,7 +54,6 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
     })
   );
 
-  const { setNodeRef } = useDroppable({ sectionId });
   return(
     <>
       <SortableContext
@@ -63,7 +62,8 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
         strategy={verticalListSortingStrategy}
       >
         <Grid
-         style={{border: '1px solid'}}
+          style={{border: '1px solid'}}
+
         >
           {stories.map(({ id, title, isDragOver }, index) => (
           <>
