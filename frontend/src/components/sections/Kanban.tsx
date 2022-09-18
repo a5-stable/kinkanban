@@ -45,6 +45,7 @@ const Kanban: React.FC = () => {
     display: "flex",
     overflowX: "scroll",
     height: "100%",
+    gap: "50px",
   })
 
   type Action =
@@ -200,7 +201,6 @@ const Kanban: React.FC = () => {
     })
   );
 
-
   return (
     <>
     <div
@@ -211,31 +211,23 @@ const Kanban: React.FC = () => {
       }}
     >
     </div>
-      <KanbanContainer>
         <DndContext
           sensors={sensors}
           collisionDetection={closestCenter}
           onDragOver={handleDragOver}
           onDragEnd={handleDragEnd}
         >
-          {Object.keys(data).map((key) => (
-            <Lane
-              key={key}
-              sectionId={key}
-              stories={data[key]}
-              dispatch={dispatch}
-            />
-          ))}
+          <KanbanContainer>
+            {Object.keys(data).map((key) => (
+              <Lane
+                key={key}
+                sectionId={key}
+                stories={data[key]}
+                dispatch={dispatch}
+              />
+            ))}
+          </KanbanContainer>
         </DndContext>
-        <div style={{width: "300px"}}>
-          <Button 
-            variant="text"
-            onClick={handleAddSection}
-          >
-            + Add Section
-          </Button>
-        </div>
-      </KanbanContainer>
     </>
   )
 }
