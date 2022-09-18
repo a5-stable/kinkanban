@@ -11,7 +11,7 @@ class Api::V1::ProjectsController < ApplicationController
 
   def search
     @response = Section.where(project_id: @project.id).map {|section|
-      [section.id, Story.where(section_id: section.id)]
+      [section.id, Story.where(section_id: section.id).order(:position)]
     }.to_h
     render status: 200, json: { body: @response }
   end

@@ -39,6 +39,6 @@ class Api::V1::StoriesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def story_params
-    params.require(:story).permit(:title, :section_id)
+    params.require(:story).permit(:title, :section_id, :position)
   end
 end

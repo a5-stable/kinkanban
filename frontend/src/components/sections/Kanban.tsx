@@ -66,6 +66,7 @@ const Kanban: React.FC = () => {
       sectionId: number;
       activeIndex: number;
       overIndex: number;
+      id: number;
     }
     | { 
         type: "DELETE";
@@ -124,7 +125,8 @@ const Kanban: React.FC = () => {
           type: "REORDER",
           sectionId: activeContainerId,
           activeIndex: activeIndex,
-          overIndex: overIndex
+          overIndex: overIndex,
+          id: active.id,
         })
       } else {
         dispatch({
@@ -173,9 +175,9 @@ const Kanban: React.FC = () => {
         };
       }
       case "REORDER": {
-        const { sectionId, activeIndex, overIndex } = action;
+        const { sectionId, activeIndex, overIndex, id } = action;
 
-        client.patch(`stories/${id}`, { story: { section_id: sectionId } }).then((res) => {
+        client.patch(`stories/${id}`, { story: { section_id: sectionId, position: activeIndex } }).then((res) => {
           console.log(res);
         });
 

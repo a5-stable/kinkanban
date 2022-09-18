@@ -52,7 +52,8 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
   const laneStyle = {
     border: '1px solid',
     padding: '3px',
-    overflowY: 'scroll'
+    overflowY: 'scroll',
+    width: '500px'
   }
 
   return(
