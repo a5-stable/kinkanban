@@ -15,6 +15,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton } from "@material-ui/core";
 import { SortableItem } from "./SortableItem";
 import { useSortable } from '@dnd-kit/sortable';
+import { CSS } from "@dnd-kit/utilities";
 
 const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }) => {
 
@@ -34,34 +35,30 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }
     })
   }
 
+  const itemStyle = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    width: 110,
+    height: 30,
+    display: "flex",
+    alignItems: "center",
+    paddingLeft: 5,
+    border: "1px solid gray",
+    borderRadius: 5,
+    marginBottom: 5,
+    userSelect: "none",
+    cursor: "grab",
+    boxSizing: "border-box"
+  };
+
   const deleteItem = (sectionId, id) => {
     dispatch({ type: "DELETE", sectionId, id })
   }
 
   return(
-    <>
-      <Card
-        ref={setNodeRef}
-        {...attributes}
-        {...listeners}
-      >
-        <CardContent>
-          <TextField
-            id="standard-basic"
-            variant="standard"
-            defaultValue={title}
-            placeholder={title || "No Title"}
-            onBlur={submitItemTitle}
-          />
-          <IconButton
-            aria-label="delete"
-            onClick={() => deleteItem(sectionId, id)}
-          >
-            <DeleteIcon />
-          </IconButton>
-        </CardContent>
-      </Card>
-    </>
+    <div style={itemStyle} ref={setNodeRef} {...attributes} {...listeners}>
+      Item {id}
+    </div>
   )
 };
 

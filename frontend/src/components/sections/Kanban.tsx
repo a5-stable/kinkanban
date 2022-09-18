@@ -44,7 +44,6 @@ const Kanban: React.FC = () => {
   const KanbanContainer = styled(Container) ({
     display: "flex",
     overflowX: "scroll",
-    gap: "50px",
     height: "100%",
   })
 
@@ -81,8 +80,10 @@ const Kanban: React.FC = () => {
   type State = any;
 
   const handleDragOver = ( event ) => {
+    console.log(event);
     const { active, over } = event;
-    const overId = over.id;
+    const overId = over?.id;
+    console.log("overId: " + overId)
 
     if (!overId) {
       return;
@@ -200,6 +201,7 @@ const Kanban: React.FC = () => {
       coordinateGetter: sortableKeyboardCoordinates
     })
   );
+  const containerStyle = { display: "flex" };
 
   return (
     <>
@@ -211,13 +213,12 @@ const Kanban: React.FC = () => {
       }}
     >
     </div>
-      <KanbanContainer>
         <DndContext
           sensors={sensors}
-          collisionDetection={closestCenter}
           onDragOver={handleDragOver}
           onDragEnd={handleDragEnd}
         >
+          <div style={containerStyle}>
           {Object.keys(data).map((key) => (
             <Lane
               key={key}
@@ -226,16 +227,8 @@ const Kanban: React.FC = () => {
               dispatch={dispatch}
             />
           ))}
+          </div>
         </DndContext>
-        <div style={{width: "300px"}}>
-          <Button 
-            variant="text"
-            onClick={handleAddSection}
-          >
-            + Add Section
-          </Button>
-        </div>
-      </KanbanContainer>
     </>
   )
 }

@@ -15,7 +15,7 @@ import StoryCard from "./StoryCard";
 import Spacer from "./Spacer";
 import { arrayMove, SortableContext, sortableKeyboardCoordinates, verticalListSortingStrategy } from "@dnd-kit/sortable";
 import { SortableItem } from "./SortableItem";
-import { closestCenter, DndContext, DragOverlay, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { closestCenter, DndContext, DragOverlay, KeyboardSensor, PointerSensor, useDroppable, useSensor, useSensors } from "@dnd-kit/core";
 
 const Lane: any = ({ sectionId, stories, dispatch }) => {
   const SectionCard = styled(Card) ({
@@ -54,48 +54,34 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
     })
   );
 
+  const { setNodeRef } = useDroppable({ sectionId });
   return(
     <>
-      <Grid>
-        <SectionCard>
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              <Input
-                defaultValue="No title"
-              />
-            </Typography>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              <Button
-                onClick={() => dispatch({ type: "CREATE", sectionId: sectionId })}
-                color="secondary"
+      <SortableContext
+        id={sectionId}
+        items={stories}
+        strategy={verticalListSortingStrategy}
+      >
+        <Grid
+          ref={setNodeRef}
+        >
+          {stories.map(({ id, title, isDragOver }, index) => (
+            <>
+              <Spacer y={2} />
+              <StoryCard
+                id={id}
+                key={id}
+                title={title}
+                isDragOver={isDragOver}
+                sectionId={sectionId}
+                dispatch={dispatch}
+                position={index}
               >
-                + Add Story
-              </Button>
-                <SortableContext
-                  id={sectionId}
-                  items={stories}
-                  strategy={verticalListSortingStrategy}
-                >
-                  {stories.map(({ id, title, isDragOver }, index) => (
-                    <>
-                      <Spacer y={2} />
-                      <StoryCard
-                        id={id}
-                        key={id}
-                        title={title}
-                        isDragOver={isDragOver}
-                        sectionId={sectionId}
-                        dispatch={dispatch}
-                        position={index}
-                      >
-                      </StoryCard>
-                   </>
-                  ))}
-                </SortableContext>
-            </Typography>
-          </CardContent>
-        </SectionCard>
-      </Grid>
+              </StoryCard>
+           </>
+          ))}
+        </Grid>
+      </SortableContext>
     </>
   )
 }
