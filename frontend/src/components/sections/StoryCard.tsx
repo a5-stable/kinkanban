@@ -15,6 +15,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { IconButton } from "@material-ui/core";
 import { SortableItem } from "./SortableItem";
 import { useSortable } from '@dnd-kit/sortable';
+import { CSS } from "@dnd-kit/utilities";
 
 const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }) => {
 
@@ -38,9 +39,23 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }
     dispatch({ type: "DELETE", sectionId, id })
   }
 
+  const itemStyle = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    display: "flex",
+    alignItems: "center",
+    paddingLeft: 5,
+    borderRadius: 5,
+    marginBottom: 5,
+    userSelect: "none",
+    cursor: "grab",
+    boxSizing: "border-box"
+  };
+
   return(
     <>
       <Card
+        style={itemStyle}
         ref={setNodeRef}
         {...attributes}
         {...listeners}

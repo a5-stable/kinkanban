@@ -11,7 +11,7 @@ import Counter from './Counter'
 import Kanb from "./Lane";
 import { arrayMove, SortableContext, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 import { SortableItem } from "./SortableItem";
-import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { closestCenter, DndContext, KeyboardSensor, PointerSensor, useDroppable, useSensor, useSensors } from "@dnd-kit/core";
 
 const Kanban: React.FC = () => {
   const { id } = useParams();
@@ -44,7 +44,6 @@ const Kanban: React.FC = () => {
   const KanbanContainer = styled(Container) ({
     display: "flex",
     overflowX: "scroll",
-    gap: "50px",
     height: "100%",
   })
 
@@ -200,6 +199,7 @@ const Kanban: React.FC = () => {
       coordinateGetter: sortableKeyboardCoordinates
     })
   );
+
 
   return (
     <>
