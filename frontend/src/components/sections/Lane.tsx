@@ -18,11 +18,6 @@ import { SortableItem } from "./SortableItem";
 import { closestCenter, DndContext, DragOverlay, KeyboardSensor, PointerSensor, useDroppable, useSensor, useSensors } from "@dnd-kit/core";
 
 const Lane: any = ({ sectionId, stories, dispatch }) => {
-  const SectionCard = styled(Card) ({
-    height: "100%",
-    width: "300px",
-  });
-
   const [add, setAdd] = useState(false);
   const [addInput, setAddInput] = useState("");
 
@@ -54,34 +49,40 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
     })
   );
 
+  const laneStyle = {
+    border: '1px solid',
+    padding: '3px',
+    overflowY: 'scroll'
+  }
+
   return(
     <>
-      <SortableContext
-        id={sectionId}
-        items={stories}
-        strategy={verticalListSortingStrategy}
+      <Grid
+        style={laneStyle}
       >
-        <Grid
-          style={{border: '1px solid'}}
-
+        <SortableContext
+          id={sectionId}
+          items={stories}
+          strategy={verticalListSortingStrategy}
         >
-          {stories.map(({ id, title, isDragOver }, index) => (
-          <>
-            <Spacer y={2} />
-            <StoryCard
-              id={id}
-              key={id}
-              title={title}
-              isDragOver={isDragOver}
-              sectionId={sectionId}
-              dispatch={dispatch}
-              position={index}
-            >
-            </StoryCard>
-         </>
-          ))}
-        </Grid>
-      </SortableContext>
+
+            {stories.map(({ id, title, isDragOver }, index) => (
+              <>
+                <Spacer y={2} />
+                <StoryCard
+                  id={id}
+                  key={id}
+                  title={title}
+                  isDragOver={isDragOver}
+                  sectionId={sectionId}
+                  dispatch={dispatch}
+                  position={index}
+                >
+                </StoryCard>
+             </>
+            ))}
+        </SortableContext>
+      </Grid>
     </>
   )
 }

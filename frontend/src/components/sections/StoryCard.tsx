@@ -59,15 +59,18 @@ const StoryCard: any = ({ id, title, isDragOver, sectionId, dispatch, position }
         ref={setNodeRef}
         {...attributes}
         {...listeners}
+        variant="outlined"
       >
         <CardContent>
-          <TextField
-            id="standard-basic"
-            variant="standard"
-            defaultValue={title}
-            placeholder={title || "No Title"}
-            onBlur={submitItemTitle}
-          />
+          <Typography variant="h5" component="div">
+            <TextField
+              id="standard-basic"
+              variant="standard"
+              defaultValue={title}
+              placeholder={title || "No Title"}
+              onBlur={submitItemTitle}
+            />
+          </Typography>
           <IconButton
             aria-label="delete"
             onClick={() => deleteItem(sectionId, id)}
