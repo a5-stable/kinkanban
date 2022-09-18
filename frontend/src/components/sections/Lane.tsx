@@ -13,6 +13,9 @@ import Input from '@mui/material/Input';
 import TextField from '@mui/material/TextField';
 import StoryCard from "./StoryCard";
 import Spacer from "./Spacer";
+import { arrayMove, SortableContext, sortableKeyboardCoordinates, verticalListSortingStrategy } from "@dnd-kit/sortable";
+import { SortableItem } from "./SortableItem";
+import { closestCenter, DndContext, DragOverlay, KeyboardSensor, PointerSensor, useDroppable, useSensor, useSensors } from "@dnd-kit/core";
 
 const Lane: any = ({ sectionId, stories, dispatch }) => {
   const SectionCard = styled(Card) ({
@@ -44,55 +47,41 @@ const Lane: any = ({ sectionId, stories, dispatch }) => {
     ));
   };
 
-  const onAddInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const value = event.currentTarget.value;
-    setAddInput(value);
-  };
-
-
-  const onItemsDrop = (
-    e: React.DragEvent<HTMLDivElement>,
-    newSectionId: number
-  ) => {
-    const item = e.dataTransfer.getData("text/plain");
-    const parsedItem = JSON.parse(item);
-    const position = stories.findIndex((i) => i.id === parsedItem.id) + 1;
-    console.log(position);
-
-    dispatch({
-      type: "UPDATE_CATEGORY",
-      id: parsedItem.id,
-      newSectionId,
-      oldSectionId: parsedItem.sectionId,
-      position: position
-    });
-  };
+  const sensors = useSensors(
+    useSensor(PointerSensor),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
 
   return(
     <>
-      <Grid
-        onDragOver={(e) => e.preventDefault()}
-        onDrop={(e) => onItemsDrop(e, sectionId)}
+      <SortableContext
+        id={sectionId}
+        items={stories}
+        strategy={verticalListSortingStrategy}
       >
-        <SectionCard>
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              <Input
-                defaultValue="No title"
-              />
-            </Typography>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-              <Button
-                onClick={() => dispatch({ type: "CREATE", sectionId: sectionId })}
-                color="secondary"
-              >
-                + Add Story
-              </Button>
-              {Items(stories, sectionId)}
-            </Typography>
-          </CardContent>
-        </SectionCard>
-      </Grid>
+        <Grid
+          style={{border: '1px solid'}}
+
+        >
+          {stories.map(({ id, title, isDragOver }, index) => (
+          <>
+            <Spacer y={2} />
+            <StoryCard
+              id={id}
+              key={id}
+              title={title}
+              isDragOver={isDragOver}
+              sectionId={sectionId}
+              dispatch={dispatch}
+              position={index}
+            >
+            </StoryCard>
+         </>
+          ))}
+        </Grid>
+      </SortableContext>
     </>
   )
 }
