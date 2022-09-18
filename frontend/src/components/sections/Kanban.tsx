@@ -161,6 +161,11 @@ const Kanban: React.FC = () => {
       case "UPDATE_SECTION": {
         const { activeContainerId, activeIndex, overContainerId, overIndex, id } = action
         const active = state[activeContainerId].filter((item) =>  item.id === id )
+
+        client.patch(`stories/${id}`, { story: { section_id: overContainerId} }).then((res) => {
+          console.log(res);
+        });
+
         return  {
           ...state,
           [activeContainerId]: [...state[activeContainerId].slice(0, activeIndex), ...state[activeContainerId].slice(activeIndex + 1)],
@@ -169,6 +174,11 @@ const Kanban: React.FC = () => {
       }
       case "REORDER": {
         const { sectionId, activeIndex, overIndex } = action;
+
+        client.patch(`stories/${id}`, { story: { section_id: sectionId } }).then((res) => {
+          console.log(res);
+        });
+
         return {
           ...state,
           [sectionId]: arrayMove(
