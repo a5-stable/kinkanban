@@ -2,13 +2,16 @@ version: '3'
 
 services:
   db:
-    image: mysql:8.0.23
+    image: postgres:latest
     ports:
-      - 3308:3306
+      - "5435:5432"
     volumes:
-      - mysql-data:/var/lib/mysql
+      - postgres-data:/var/lib/postgresql/data
     environment:
-      - MYSQL_ROOT_PASSWORD=password
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: inn
+
   backend:
     build: 
       context: ./backend/
@@ -25,9 +28,10 @@ services:
       TZ: Asia/Tokyo
       RAILS_ENV: development
     ports:
-      - 3000:3000
+      - "3000:3000"
     depends_on:
       - db
+
   frontend:
     build: 
       context: ./frontend/
@@ -39,6 +43,7 @@ services:
     command: sh -c "yarn start"
     ports:
       - "8000:3000"
+
 volumes:
-  mysql-data:
+  postgres-data:
     driver: local

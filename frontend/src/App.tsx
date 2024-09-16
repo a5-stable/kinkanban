@@ -5,7 +5,7 @@ import CommonLayout from "../src/components/layouts/CommonLayout"
 import Home from "../src/components/pages/Home"
 import SignUp from "../src/components/pages/SignUp"
 import SignIn from "../src/components/pages/SignIn"
-import Kanban from './components/sections/Kanban';
+// import Kanban from './components/sections/Kanban';
 import { ThemeProvider } from '@material-ui/core';
 
 import logo from './logo.svg';
@@ -65,7 +65,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <ThemeProvider>
+    <>
       <Router>
         <AuthContext.Provider value={{ loading, setLoading, isSignedIn, setIsSignedIn, currentUser, setCurrentUser}}>
           <CommonLayout>
@@ -75,7 +75,6 @@ const App: React.FC = () => {
               <Route path="/" element={<Home />} />
               <Route
                 path="/projects/:id"
-                element={<Kanban />}
               />
               {/* <Route
                 element={
@@ -89,7 +88,7 @@ const App: React.FC = () => {
           </CommonLayout>
         </AuthContext.Provider>
       </Router>
-    </ThemeProvider>
+    </>
   )
 }
 

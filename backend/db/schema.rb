@@ -10,14 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_13_135923) do
-  create_table "projects", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+ActiveRecord::Schema[8.0].define(version: 2022_08_13_135923) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "pg_catalog.plpgsql"
+
+  create_table "projects", force: :cascade do |t|
     t.string "title", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "sections", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "sections", force: :cascade do |t|
     t.string "title"
     t.bigint "project_id"
     t.datetime "created_at", null: false
@@ -25,7 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_13_135923) do
     t.index ["project_id"], name: "index_sections_on_project_id"
   end
 
-  create_table "stories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "stories", force: :cascade do |t|
     t.string "title"
     t.integer "section_id", null: false
     t.integer "position", null: false
@@ -33,7 +36,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_13_135923) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "story_sections", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "story_sections", force: :cascade do |t|
     t.integer "story_id", null: false
     t.integer "section_id", null: false
     t.datetime "created_at", null: false
@@ -41,7 +44,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_13_135923) do
     t.index ["story_id", "section_id"], name: "index_story_id_section_id", unique: true
   end
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "provider", default: "email", null: false
     t.string "uid", default: "", null: false
     t.string "encrypted_password", default: "", null: false

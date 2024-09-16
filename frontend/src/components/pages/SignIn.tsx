@@ -67,6 +67,7 @@ const SignIn: React.FC = () => {
     try {
       const res = await signUp(params);
       if (res.status === 200) {
+        console.log(res.headers)
         // アカウント作成と同時にログインさせてしまう
         Cookies.set("_access_token", res.headers["access-token"])
         Cookies.set("_client", res.headers["client"])

@@ -11,6 +11,11 @@ Rails.application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  config.session_store :cookie_store
+  config.middleware.use ActionDispatch::Cookies
+  config.middleware.use config.session_store, config.session_options
+
+
   # Show full error reports.
   config.consider_all_requests_local = true
 

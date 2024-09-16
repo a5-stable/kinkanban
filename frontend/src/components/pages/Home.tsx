@@ -11,38 +11,38 @@ const Home: React.FC = () => {
   const [ error, setError ] = useState<string>("")
   const [ title, setTitle ] = useState<string>("")
 
-  const handleAddProject = () => {
-    const params = {
-      title: title
-    }
+  // const handleAddProject = () => {
+  //   const params = {
+  //     title: title
+  //   }
 
-    client.post("projects", { project: params }).then((res) => {
-      const newProjects = [res.data, ...projects]
-      setProjects(newProjects);
-    })
+  //   client.post("projects", { project: params }).then((res) => {
+  //     const newProjects = [res.data, ...projects]
+  //     setProjects(newProjects);
+  //   })
 
-    setTitle("");
-  }
+  //   setTitle("");
+  // }
 
-  const handleProjectTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setTitle(e.target.value);
+  // const handleProjectTitleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setTitle(e.target.value);
 
-    if (title != null) {
-      setError("");
-    } else {
-      setError("入力してください");
-    }
-  };
+  //   if (title != null) {
+  //     setError("");
+  //   } else {
+  //     setError("入力してください");
+  //   }
+  // };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      client.get("projects").then((res) => {
-        setProjects(res.data);
-      })
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     client.get("projects").then((res) => {
+  //       setProjects(res.data);
+  //     })
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
  
   return (
     <>
@@ -57,34 +57,6 @@ const Home: React.FC = () => {
           <h1>Not signed in</h1>
         )
       }
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          handleAddProject();
-        }}
-      >
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => handleProjectTitleChange(e)}
-        />
-        <input
-          type="submit"
-          value="追加"
-        />
-        <small>
-          {error}
-        </small>
-      </form>
-      <ul>
-        {projects.map((project: any) => (
-          <>
-            <li key={project.id}>
-              <NavLink to={"/projects/" + project.id}>{project.title}</NavLink>
-            </li>
-          </>
-        ))}
-      </ul>
     </>
   )
 }
