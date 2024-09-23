@@ -39,7 +39,7 @@ const App: React.FC = () => {
 
         console.log(res?.data.data)
       } else {
-        console.log("No current user")
+        console.log("No current user!!!!!!!!!")
       }
     } catch (err) {
       console.log(err)

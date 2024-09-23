@@ -41,8 +41,9 @@ services:
         source: ./frontend
         target: /frontend
     command: sh -c "yarn start"
+
     ports:
-      - "8000:3000"
+      - "8000:8000"
 
 volumes:
   postgres-data:

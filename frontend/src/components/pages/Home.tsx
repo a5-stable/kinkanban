@@ -1,9 +1,10 @@
 import React, { useContext, useState, useEffect } from "react"
-import { BrowserRouter, Route, NavLink } from "react-router-dom"
+import { BrowserRouter, Route, NavLink, Routes } from "react-router-dom"
 
 import { AuthContext } from "../../../src/App"
 import client from "../../lib/api/client"
 import { Project } from "../../interfaces"
+import ListPage from "./ListPage"
 
 const Home: React.FC = () => {
   const { isSignedIn, currentUser } = useContext(AuthContext)
@@ -45,19 +46,9 @@ const Home: React.FC = () => {
   // }, []);
  
   return (
-    <>
-      {
-        isSignedIn && currentUser ? (
-          <>
-            <h1>Signed in successfully!</h1>
-            <h2>Email: {currentUser?.email}</h2>
-            <h2>Name: {currentUser?.name}</h2>
-          </>
-        ) : (
-          <h1>Not signed in</h1>
-        )
-      }
-    </>
+    <Routes>
+      <Route path="/" element={<ListPage />} />
+    </Routes>
   )
 }
 

@@ -10,9 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2022_08_13_135923) do
+ActiveRecord::Schema[8.0].define(version: 2024_09_16_153103) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
+
+  create_table "list_items", force: :cascade do |t|
+    t.bigint "list_id", null: false
+    t.string "name"
+    t.boolean "completed", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["list_id"], name: "index_list_items_on_list_id"
+  end
+
+  create_table "lists", force: :cascade do |t|
+    t.string "name", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "description"
+    t.bigint "owner_id", null: false
+    t.bigint "grouop_id"
+    t.boolean "completed", default: false
+  end
 
   create_table "projects", force: :cascade do |t|
     t.string "title", null: false
@@ -69,5 +88,6 @@ ActiveRecord::Schema[8.0].define(version: 2022_08_13_135923) do
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
+  add_foreign_key "list_items", "lists"
   add_foreign_key "sections", "projects"
 end
